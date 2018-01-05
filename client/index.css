@@ -1,9 +1,113 @@
+/*
+olive - 717570
+dark brown - 444443
+khaki - B5B2AA
+orange - FF8110
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Oswald:600|Bitter');
+@font-face {
+	font-family: 'Sequel Rounded';
+	src: url('/assets/fonts/OGJ Type Design - Sequel Rounded Extended.otf'),
+		url('/assets/fonts/OGJ Type Design - Sequel Rounded Extended.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
 html, body {
 	margin:0;
 	padding:0;
-	height:100%
+	height:100%;
+  font-size:12px;
+}
+h1 {
+  font-family: 'Sequel Rounded', sans-serif;
+  position: absolute;
+  top: 60%;
+  color: white;
+  letter-spacing: .6em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  margin: -1px 0 40px 0;
+  letter-spacing: 1.4px;
+  font-size: 2.3em;
+  text-align: center;
+}
+p {
+  font-family: 'Bitter', serif;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+section {
+  position: relative;
 }
 
+/*  NAVIGATION  */
+header {
+  background: linear-gradient(to right, rgba(68,68,67,0), rgba(68,68,67,.3) 30%, rgba(68,68,67,.7) 40%);
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  top: 30px;
+  font-family: 'Sequel Rounded', sans-serif;
+  font-size: .6em;
+  letter-spacing: .2em;
+  max-height: 28px;
+}
+header ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+header > ul > li {
+  padding: 10px 5%;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+/* nested nav */
+header ul ul {
+  margin: 10px auto 0;
+  border-top: 1px solid #FF8110;
+  display: none;
+  background: #444443;
+}
+header ul ul li {
+  padding: 10px 0;
+  font-size: .9em;
+  margin: 0 -15px;
+  cursor: pointer;
+  color: #fff;
+}
+header a {
+  text-decoration: none;
+}
+header a, header a:visited, header a:hover, header a:active {
+  color: inherit;
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #FF8110;
+  margin: 0 auto;
+}
+.hover-over-services {
+  border-radius: 6.5px;
+  background: #444443;
+}
+
+/*  HERO  */
 .hero {
   background:url('/assets/hero.png') no-repeat center;
   background-position: center;
@@ -14,63 +118,280 @@ html, body {
 .hero {
   padding-bottom: 58%;
 }
+/* .hero img {
+  width: 10%;
+  margin: 20px;
+} */
 
+/*  MARKETING SERVICES ON HOME PAGE  */
+.content {
+  width: 60%;
+  margin: 0 auto;
+}
 .section1 {
-  background: blue;
+  background: #fff;
 }
-.section2 {
-  background: pink;
+.section1 .content {
+  margin: 70px auto 0;
+	position: relative;
+	z-index: 100;
 }
-.section3 {
-  background: green;
+.section1 .diagonal {
+  background-image: -webkit-linear-gradient(73deg, #717570 50%, #fff 50%);
+  padding: 16% 0%;
 }
-.section4 {
-  background: orange;
-}
-.section5 {
-  background: purple;
-}
-
-.section {
-  position: relative;
-  color: #fff;
-  text-align: center;
-}
-.section:before {
+.section1 img {
+  width: 45%;
   position: absolute;
-  content:'';
+	right: 5%;
+  bottom: 29%;
+}
+/* ------ */
+.section2 {
+  background: #717570;
+}
+.section2 .content {
+  margin: 0 auto 0 16%;
+	position: relative;
+	z-index: 100;
+}
+.section2 .diagonal {
+  background-image: -webkit-linear-gradient(-73deg, #717570 50%, #444443 50%);
+  padding: 16% 0%;
+}
+.section2 img {
+  width: 40%;
+  position: absolute;
+	top: -29%;
+  left: 2%;
+}
+/* ------ */
+.section3 {
+  background: #444443;
+  color: #fff;
+  margin: -1px 0 0 0;
+}
+.section3 .diagonal {
+  background-image: -webkit-linear-gradient(73deg, #fff 50%, #444443 50%);
+  padding: 16% 0%;
+}
+.section3 .content {
+  position: relative;
+  z-index: 100;
+  padding: 30px 0px;
+  width: 57%;
+  margin: 0px 8% 0 auto;
+}
+.section3 h2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 11px;
+}
+.section3 > img {
+  width: 40%;
+  position: absolute;
+  left: 80px;
+   max-width: 450px;
+  top: 100px;
+}
+.section3 .content img {
+  width: 3.3em;
+  display: inline-block;
+}
+/* ------ */
+.section4 {
+  background: #fff;
+}
+.section4 .diagonal {
+  background-image: -webkit-linear-gradient(73deg, #B5B2AA 50%, #fff 50%);
+  padding: 16% 0%;
+}
+.section4 .content {
+  margin: 0 auto 75px 18%;
+  position: relative;
+  z-index: 100;
+}
+.section4 img {
+  position: absolute;
+}
+.section4 .climbers-img {
+  width: 40%;
+  right: 0px;
+  top: 162px;
+}
+.section4 .chart-img {
+  width: 13%;
+  right: 251px;
+  top: 332px;
+}
+/* ------ */
+.section5 {
+  background: #B5B2AA;
+	margin-bottom: -2px;
+}
+.section5 .content {
+  position: relative;
+  z-index: 100;
+  margin: 0 7% 0 auto;
+}
+.section5 h2 {
+  text-align: left;
+}
+.section5 > img {
+  width: 80%;
+  left: 0;
+  position: absolute;
+  top: -50px;
+}
+.section5 .content > img {
+  position: absolute;
+  width: 23%;
+  left: -192px;
+  top: -136px;
+}
+.section5 p:last-child {
+	margin-bottom: 0;
 }
 
-.diagonal {
-  z-index: 1;
-  padding: 3em;
+footer {
+  background:url('/assets/footer.png') no-repeat center;
+  background-position: center;
+  background-size:cover;
+  /*position: absolute;*/
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+footer {
+	padding-bottom: 36%;
 }
 
-/*.diagonal_sw-ne {
-  z-index: 1;
-  padding: 3em;
-}*/
-.diagonal_sw-ne:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
+/******** MOBILE ONLY ********/
+@media only screen and (max-width: 575px) {
+	p {
+		line-height: 1.3;
+		font-size: 1em;
+	}
+
+	.content {
+		width: 90%;
+	}
+
+	.section1 .content {
+		margin: 30px auto 0;
+		padding-bottom: 20%;
+	}
+	.section1 img {
+		bottom: 15%;
+		width: 55%;
+	}
+
+	.section2 img {
+		top: -18%;
+		left: 0%;
+	}
+
+
+
+
+
 }
-.diagonal_nw-se:before {
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
+
+/******** DESKTOP ONLY ********/
+@media only screen and (min-width: 576px) {
+  .navigation li:hover {
+    color: #FF8110;
+  }
+}
+
+/******** SMALL/MEDIUM SCREENS ********/
+@media only screen and (min-width: 576px) and (max-width: 958px) {
+
+	.section1 img {
+		bottom: 27%;
+	}
+
+	.section2 .content {
+		margin: 0 auto 0 19%;
+	}
+	.section2 img {
+		top: -18%;
+		left: 5%;
+	}
+
+	.section3 > img {
+		width: 59%;
+    position: absolute;
+    left: 1%;
+    top: 28px;
+	}
+	.section3 .content {
+		width: 65%;
+	}
+
+	.section4 .climbers-img {
+    top: 190px;
+	}
+	.section4 .chart-img {
+    top: 55%;
+		right: 15%;
+	}
+
+	.section5 .content > img {
+	  left: -156px;
+	  top: -110px;
+	}
+	.section5 > img {
+		width: 70%;
+    top: -11%;
+	}
+}
+
+/******** MEDIUM SCREENS ********/
+@media only screen and (min-width: 959px) and (max-width: 1440px) {
+
+	h2 {
+		font-size: 2.5em;
+	}
+	p {
+		font-size: 1.2em;
+	}
+
+	.section1 img {
+    width: 40%;
+	}
+
+	.section2 .content {
+		max-height: 230px;
+	}
+	.section2 img {
+		left: 7%;
+	}
+
+	.section3 .content {
+	  width: 53%;
+	  margin: 0px 12% 0 auto;
+	}
+
+	.section4 .content {
+	  margin: 0 auto 75px 23%;
+	  width: 50%;
+	}
+
+	.section5 .content {
+    margin: 0 17% 0 auto;
+		width: 50%;
+	}
+	.section5 > img {
+    width: 58%;
+    top: -137px;
+		max-width: 740px;
+	}
+	.section5 .content > img {
+    width: 20%;
+		left: -166px;
+	}
+
+/******** LARGE SCREENS ONLY ********/
+@media only screen and (min-width: 1441px) {
+
+
 }

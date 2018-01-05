@@ -1,11 +1,32 @@
-// $(document).ready(function(){
-//   $(window).scroll(function(e){
-//     parallax();
-//   });
-//   function parallax(){
-//     var scrolled = $(window).scrollTop();
-//     $('.hero').css('top',-(scrolled*0.0315)+'rem');
-//     $('.hero > h1').css('top',-(scrolled*-0.005)+'rem');
-//     $('.hero > h1').css('opacity',1-(scrolled*.00175));
-//   };
-// });
+$(document).ready(function(){
+
+
+
+
+  if ($(window).width() < 576) {
+
+  } else {
+
+
+    // handler for marketing services nav list
+    $('.navigation li:first-child').hover(function(){
+      $('#services').show();
+      $(this).addClass('hover-over-services');
+
+      // marketing services sub-nav
+      $('#services li').hover(function(){
+        $(this).css('color', '#FF8110');
+        $(this).mouseleave(function(){
+          $(this).css('color', '#fff');
+        });
+      });
+
+      $(this).mouseleave(function(){
+        $('#services').hide();
+        $(this).removeClass('hover-over-services');
+      });
+    });
+  }
+
+
+});
