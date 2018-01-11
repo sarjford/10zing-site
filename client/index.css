@@ -118,10 +118,6 @@ header a, header a:visited, header a:hover, header a:active {
 .hero {
   padding-bottom: 58%;
 }
-/* .hero img {
-  width: 10%;
-  margin: 20px;
-} */
 
 /*  MARKETING SERVICES ON HOME PAGE  */
 .content {
@@ -264,17 +260,86 @@ footer {
 	padding-bottom: 36%;
 }
 
-/******** MOBILE ONLY ********/
+/* -------------------------------------- */
+/************* MOBILE ONLY ****************/
+/* -------------------------------------- */
 @media only screen and (max-width: 575px) {
 	p {
 		line-height: 1.3;
 		font-size: 1em;
 	}
+	h2 {
+		font-size: 1.8em;
+		margin: -1px 0 25px 0;
+		text-align: center;
+	}
+	header {
+		top: 0;
+		max-height: 39px;
+		background: rgba(12,12,12,.4);
+		font-size: .5em;
+		text-align: left;
+	}
+	header img {
+		position: absolute;
+		width: 31px;
+		top: 4px;
+		left: 5px;
+		/* display: inline-block; */
+	}
+	header > ul {
+		-webkit-padding-start: 0px;
+		display: inline-block;
+		margin-left: 33px;
+		width: 100%;
+	}
+	header > ul > li {
+		padding: 16px 0;
+		text-align: center;
+		/* border: solid; */
+	}
+
+	header > ul > li:first-child {
+		width: 39%;
+	}
+	header > ul > li:nth-child(2) {
+		width: 24%;
+	}
+	header > ul > li:last-child {
+		width: 26%;
+	}
+
+	header ul ul li {
+		font-size: .8em;
+	}
+	header ul ul {
+		background: none;
+		margin: 16px auto 0;
+	}
+	.arrow-down {
+		border-top: 6px solid #FF8110;
+	}
+	.services-expanded {
+		background: rgba(12,12,12,.7);
+		color: #FF8110;
+	}
+
+	.hero {
+		background:url('/assets/hero_mobile.png') no-repeat center;
+		/* background-position: center; */
+		background-size:cover;
+		/*position: absolute;*/
+		/* top: 0; bottom: 0; left: 0; right: 0; */
+	}
+	.hero {
+		padding-bottom: 180%;
+	}
 
 	.content {
 		width: 90%;
+		margin: 0px auto;
+		padding: 15px 0 0 0;
 	}
-
 	.section1 .content {
 		margin: 30px auto 0;
 		padding-bottom: 20%;
@@ -282,25 +347,68 @@ footer {
 	.section1 img {
 		bottom: 15%;
 		width: 55%;
+		max-width: 255px;
 	}
 
 	.section2 img {
-		top: -18%;
-		left: 0%;
+		width: 60%;
+    top: -4%;
+    left: 12%;
+	}
+	.section2 .content {
+    margin: -1% auto 0;
+	}
+
+	.section3 .content {
+    width: 90%;
+		margin: 0px auto;
+		padding: 15px 0 0 0;
+	}
+	.section3 .content img {
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 0;
+    top: -13%;
+	}
+	.section3 h2 {
+		display: block;
+		vertical-align: bottom;
+		margin-left: auto;
+		}
+	.section3 > img {
+		width: 100%;
+    top: 1%;
+    left: 0;
+	}
+
+	.section4 .content {
+		margin: -1% auto 15%;
+	}
+	.climbers-chart-mobile {
+		bottom: 15%;
+    width: 45%;
+    right: -2%;
 	}
 
 
-
-
-
+	.section5 .content {
+		margin: -1px auto 0;
+	}
+	.section5 h2 {
+		text-align: center;
+	}
 }
-
 /******** DESKTOP ONLY ********/
 @media only screen and (min-width: 576px) {
   .navigation li:hover {
     color: #FF8110;
   }
 }
+
+/* ------------------------------------------- */
+/**************** MEDIA QUERIES ****************/
+/* ------------------------------------------- */
 
 /******** SMALL/MEDIUM SCREENS ********/
 @media only screen and (min-width: 576px) and (max-width: 958px) {

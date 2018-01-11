@@ -16,20 +16,22 @@ router.get("/",function(req,res){
   res.sendFile(path + "index.html");
 });
 
-// router.get("/about",function(req,res){
-//   res.sendFile(path + "about.html");
-// });
-//
-// router.get("/contact",function(req,res){
-//   res.sendFile(path + "contact.html");
-// });
-//
+router.get("/about",function(req,res){
+  console.log(path)
+
+  res.sendFile(path + "/views/about.html");
+});
+
+router.get("/contact",function(req,res){
+  res.sendFile(path + "/views/contact.html");
+});
+
 app.use("/",router);
 //
 // app.use("*",function(req,res){
 //   res.sendFile(path + "404.html");
 // });
 
-app.listen(3000, () => {
-  console.log('Example app listening on port 3000!');
+app.listen(9000, () => {
+  console.log('Example app listening on port 9000!');
 });
