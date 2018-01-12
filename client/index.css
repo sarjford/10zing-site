@@ -59,9 +59,10 @@ header {
   color: #fff;
   top: 30px;
   font-family: 'Sequel Rounded', sans-serif;
-  font-size: .6em;
   letter-spacing: .2em;
-  max-height: 28px;
+	/* to adjust font/height of header */
+  max-height: 35px;
+	font-size: .8em;
 }
 header ul {
   list-style: none;
@@ -69,24 +70,27 @@ header ul {
   margin: 0;
 }
 header > ul > li {
-  padding: 10px 5%;
   display: inline-block;
   vertical-align: top;
   cursor: pointer;
+	/* to adjust font/height of header */
+	padding: 12px 5%;
 }
 /* nested nav */
 header ul ul {
-  margin: 10px auto 0;
   border-top: 1px solid #FF8110;
   display: none;
   background: #444443;
+
+	margin: 10px auto 0;
 }
 header ul ul li {
-  padding: 10px 0;
   font-size: .9em;
-  margin: 0 -15px;
   cursor: pointer;
   color: #fff;
+	padding: 10px 0;
+	/* to adjust font/height of header */
+	margin: 0 -20px;
 }
 header a {
   text-decoration: none;
@@ -108,15 +112,17 @@ header a, header a:visited, header a:hover, header a:active {
 }
 
 /*  HERO  */
-.hero {
-  background:url('/assets/hero.png') no-repeat center;
+.hero .img-wrapper {
+  padding-bottom: 57%;
+	position: relative;
+	width: 100%;
+}
+.hero .img-div {
+  background:url('/assets/hero_desktop.jpg') no-repeat center;
   background-position: center;
   background-size:cover;
-  /*position: absolute;*/
+  position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
-}
-.hero {
-  padding-bottom: 58%;
 }
 
 /*  MARKETING SERVICES ON HOME PAGE  */
@@ -277,36 +283,36 @@ footer {
 		top: 0;
 		max-height: 39px;
 		background: rgba(12,12,12,.4);
-		font-size: .5em;
+		font-size: .6em;
 		text-align: left;
+		letter-spacing: .1em;
 	}
 	header img {
 		position: absolute;
 		width: 31px;
 		top: 4px;
-		left: 5px;
-		/* display: inline-block; */
+		left: 3%;
 	}
 	header > ul {
 		-webkit-padding-start: 0px;
 		display: inline-block;
-		margin-left: 33px;
+		margin-left: 12%;
 		width: 100%;
 	}
 	header > ul > li {
 		padding: 16px 0;
 		text-align: center;
-		/* border: solid; */
 	}
 
 	header > ul > li:first-child {
 		width: 39%;
 	}
 	header > ul > li:nth-child(2) {
-		width: 24%;
+		width: 22%;
 	}
 	header > ul > li:last-child {
-		width: 26%;
+		width: 22%;
+		margin-right: 3%;
 	}
 
 	header ul ul li {
@@ -324,14 +330,11 @@ footer {
 		color: #FF8110;
 	}
 
-	.hero {
+	.hero .img-div {
 		background:url('/assets/hero_mobile.png') no-repeat center;
-		/* background-position: center; */
 		background-size:cover;
-		/*position: absolute;*/
-		/* top: 0; bottom: 0; left: 0; right: 0; */
 	}
-	.hero {
+	.hero .img-wrapper {
 		padding-bottom: 180%;
 	}
 
@@ -398,6 +401,14 @@ footer {
 	.section5 h2 {
 		text-align: center;
 	}
+
+	footer {
+	  background:url('/assets/10zing_mobileHP_footer.png') no-repeat center;
+	  background-size:cover;
+	}
+	footer {
+		padding-bottom: 107%;
+	}
 }
 /******** DESKTOP ONLY ********/
 @media only screen and (min-width: 576px) {
@@ -410,7 +421,7 @@ footer {
 /**************** MEDIA QUERIES ****************/
 /* ------------------------------------------- */
 
-/******** SMALL/MEDIUM SCREENS ********/
+/******** SMALL SCREENS ********/
 @media only screen and (min-width: 576px) and (max-width: 958px) {
 
 	.section1 img {
@@ -454,14 +465,17 @@ footer {
 }
 
 /******** MEDIUM SCREENS ********/
-@media only screen and (min-width: 959px) and (max-width: 1440px) {
+@media only screen and (min-width: 959px) {
 
 	h2 {
-		font-size: 2.5em;
+		font-size: 2.6em;
 	}
 	p {
-		font-size: 1.2em;
+		font-size: 1.3em;
 	}
+	/* .content {
+		width: 50%;
+	} */
 
 	.section1 img {
     width: 40%;
@@ -485,13 +499,14 @@ footer {
 	}
 
 	.section5 .content {
-    margin: 0 17% 0 auto;
-		width: 50%;
+    margin: 0 11% 0 auto;
+		width: 60%;
 	}
 	.section5 > img {
-    width: 58%;
-    top: -137px;
-		max-width: 740px;
+		width: 69%;
+		top: -23%;
+    max-width: none;
+		min-width: 716px;
 	}
 	.section5 .content > img {
     width: 20%;
@@ -499,7 +514,59 @@ footer {
 	}
 
 /******** LARGE SCREENS ONLY ********/
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1250px) {
+	h2 {
+		font-size: 3.6em;
+	}
+	p {
+		font-size: 1.8em;
+		line-height: 1.3;
+	}
 
+	.section1 img {
+		bottom: 21%;
+	}
+
+	.section2 .content {
+    max-height: none;
+	}
+	.section2 img {
+		top: -24%;
+	}
+
+	.section3 img {
+		width: 50%;
+    left: 4%;
+		max-width: none;
+    top: 18%;
+	}
+	.section3 h2 {
+		margin-left: 19px;
+	}
+
+	.section4 .content {
+		width: 60%;
+    margin: 0 auto 10% 12%;
+	}
+	.section4 .chart-img {
+		top: 57%;
+	}
+	.section4 .climbers-img {
+		top: 35%;
+	}
+
+	.section5 .content {
+		margin: 0 11% 0 auto;
+    width: 60%;
+	}
+	.section5 .content > img {
+		width: 23%;
+    left: -29%;
+	}
+	.section5 > img {
+		top: -10%;
+    max-width: none;
+    width: 85%;
+	}
 
 }
