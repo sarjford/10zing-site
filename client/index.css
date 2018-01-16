@@ -61,11 +61,11 @@ header {
   width: 100%;
   text-align: center;
   color: #fff;
-  top: 30px;
+	top: 5%;
   font-family: 'Sequel Rounded', sans-serif;
   letter-spacing: .2em;
 	/* to adjust font/height of header */
-  max-height: 35px;
+  max-height: 47px;
 	font-size: .8em;
 }
 header ul {
@@ -78,21 +78,21 @@ header > ul > li {
   vertical-align: top;
   cursor: pointer;
 	/* to adjust font/height of header */
-	padding: 12px 5%;
+	padding: 18px 6%;
 }
 /* nested nav */
 header ul ul {
   border-top: 1px solid #FF8110;
-  display: none;
+  display: block;
   background: #444443;
-
-	margin: 10px auto 0;
+	margin: 17px -20% 0;
 }
 header ul ul li {
   font-size: .9em;
   cursor: pointer;
   color: #fff;
-	padding: 10px 0;
+	padding: 12px 0;
+	position: relative;
 	/* to adjust font/height of header */
 	margin: 0 -20px;
 }
@@ -108,11 +108,18 @@ header a, header a:visited, header a:hover, header a:active {
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   border-top: 8px solid #FF8110;
-  margin: 0 auto;
+  margin: 0 auto 9px;
 }
 .hover-over-services {
   border-radius: 6.5px;
   background: #444443;
+}
+.underlined {
+	width:50%;
+	border-bottom:1px solid #FF8110;
+	margin: 0 auto;
+	position: absolute;
+  bottom: 0; left: 0; right: 0;
 }
 
 /*  HERO  */
@@ -162,89 +169,86 @@ header a, header a:visited, header a:hover, header a:active {
 
 /* ------ */
 .section2 {
-  background: #717570;
+  background: #4b4d49;
 	padding: 8% 26% 7% 8%;
 }
 .section2 .img-wrapper {
-	padding-bottom: 27%;
-  width: 34%;
-  bottom: 4%;
-  left: 4%;
+	padding-bottom: 31%;
+  width: 36%;
+  top: 3%;
+  right: 1%;
 }
 .section2 .img-div {
-  background:url("/assets/topography_desktop.png") no-repeat center;
+  background:url("/assets/topagraphy_desktop.png") no-repeat center;
 	background-size:cover;
 }
 
 /* ------ */
 .section3 {
-  background: #444443;
-  color: #fff;
-  margin: -1px 0 0 0;
+  background: #3a3a38;
+	padding: 9% 6% 11% 32%;
+	color: #fff;
 }
-.section3 .content {
-  position: relative;
-  z-index: 100;
-  padding: 30px 0px;
-  width: 57%;
-  margin: 0px 8% 0 auto;
+.section3 .img-wrapper {
+	padding-bottom: 48%;
+	width: 75%;
+	top: 11%;
+	left: 2%;
+}
+.section3 .img-div {
+  background:url("/assets/green_tress_desktop.png") no-repeat center;
+	background-size:cover;
 }
 .section3 h2 {
   display: inline-block;
-  vertical-align: top;
-  margin-left: 11px;
-}
-.section3 > img {
-  width: 40%;
-  position: absolute;
-  left: 80px;
-   max-width: 450px;
-  top: 100px;
+  margin: 0 0 31px 20px;
 }
 .section3 .content img {
-  width: 3.3em;
+  width: 6.3em;
   display: inline-block;
+	position: relative;
+  top: 21px;
+  left: -7px;
 }
 /* ------ */
 .section4 {
   background: #fff;
+	padding: 7% 26% 19% 8%;
 }
-.section4 .content {
-  margin: 0 auto 75px 18%;
-  position: relative;
-  z-index: 100;
+.section4 .img-wrapper {
+	padding-bottom: 24%;
+	width: 30%;
+	bottom: 8%;
+	right: 4%;
 }
-.section4 img {
-  position: absolute;
-}
-.section4 .climbers-img {
-  width: 40%;
-  right: 0px;
-  top: 162px;
-}
-.section4 .chart-img {
-  width: 13%;
-  right: 251px;
-  top: 332px;
+.section4 .img-div {
+  background:url("/assets/graph_climbers_desktop.png") no-repeat center;
+	background-size:cover;
 }
 /* ------ */
 .section5 {
   background: #B5B2AA;
 	margin-bottom: -2px;
+	padding: 21% 4% 1% 30%;
+
 }
-.section5 .content {
-  position: relative;
-  z-index: 100;
-  margin: 0 7% 0 auto;
+.section5 .img-wrapper {
+	padding-bottom: 48%;
+    left: 0;
+    top: 6%;
+    width: 88%;
+}
+.section5 .img-div {
+  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
+	background-size:cover;
 }
 .section5 h2 {
   text-align: left;
+	margin: 0;
 }
 .section5 > img {
-  width: 80%;
-  left: 0;
+  width: 100%;
   position: absolute;
-  top: -50px;
 }
 .section5 .content > img {
   position: absolute;
@@ -252,8 +256,10 @@ header a, header a:visited, header a:hover, header a:active {
   left: -192px;
   top: -136px;
 }
-.section5 p:last-child {
-	margin-bottom: 0;
+.section5 .hr {
+	width: 77%;
+  border-top: 4px solid #828680;
+  margin: 20px 0 31px 19px;
 }
 
 footer {
@@ -437,24 +443,6 @@ footer {
 		left: 5%;
 	}
 
-	.section3 > img {
-		width: 59%;
-    position: absolute;
-    left: 1%;
-    top: 28px;
-	}
-	.section3 .content {
-		width: 65%;
-	}
-
-	.section4 .climbers-img {
-    top: 190px;
-	}
-	.section4 .chart-img {
-    top: 55%;
-		right: 15%;
-	}
-
 	.section5 .content > img {
 	  left: -156px;
 	  top: -110px;
@@ -482,42 +470,17 @@ footer {
     width: 40%;
 	}
 
-	/* .section2 .content {
-		max-height: 230px;
-	}
-	.section2 img {
-		left: 7%;
-	} */
 
-	.section3 .content {
-	  width: 53%;
-	  margin: 0px 12% 0 auto;
-	}
 
-	.section4 .content {
-	  margin: 0 auto 75px 23%;
-	  width: 50%;
-	}
 
-	.section5 .content {
-    margin: 0 11% 0 auto;
-		width: 60%;
-	}
-	.section5 > img {
-		width: 69%;
-		top: -23%;
-    max-width: none;
-		min-width: 716px;
-	}
-	.section5 .content > img {
-    width: 20%;
-		left: -166px;
-	}
+
+
+
 
 /******** LARGE SCREENS ONLY ********/
 @media only screen and (min-width: 1250px) {
 	h2 {
-		font-size: 3.7em;
+		font-size: 3.8em;
 	}
 	p {
 		font-size: 1.8em;
@@ -535,7 +498,7 @@ footer {
 		top: -24%;
 	} */
 
-	.section3 img {
+	/* .section3 img {
 		width: 50%;
     left: 4%;
 		max-width: none;
@@ -543,9 +506,9 @@ footer {
 	}
 	.section3 h2 {
 		margin-left: 19px;
-	}
+	} */
 
-	.section4 .content {
+	/* .section4 .content {
 		width: 60%;
     margin: 0 auto 10% 12%;
 	}
@@ -554,20 +517,8 @@ footer {
 	}
 	.section4 .climbers-img {
 		top: 35%;
-	}
+	} */
 
-	.section5 .content {
-		margin: 0 11% 0 auto;
-    width: 60%;
-	}
-	.section5 .content > img {
-		width: 23%;
-    left: -29%;
-	}
-	.section5 > img {
-		top: -10%;
-    max-width: none;
-    width: 85%;
-	}
+
 
 }

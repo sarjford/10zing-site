@@ -31,7 +31,7 @@ $(document).ready(function(){
   } else {
 
     $('.diagonal.section4 .content').after('<img class="climbers-img" src="/assets/climbers_fromside.png"><img class="chart-img" src="/assets/chart.png">');
-    $('.section5 .content').before('<img src="/assets/climber_lookingout_backdrop.png">');
+    // $('.section5 .content').before('<img src="/assets/climber_lookingout_backdrop.png">');
 
     // handler for marketing services nav list
     $('.navigation li:first-child').hover(function(){
@@ -41,8 +41,10 @@ $(document).ready(function(){
       // marketing services sub-nav
       $('#services li').hover(function(){
         $(this).css('color', '#FF8110');
+        $(this).children('div').addClass('underlined');
         $(this).mouseleave(function(){
           $(this).css('color', '#fff');
+          $(this).children('div').removeClass('underlined');
         });
       });
 
