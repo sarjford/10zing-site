@@ -1,127 +1,3 @@
-/*
-olive - 717570
-dark brown - 444443
-khaki - B5B2AA
-orange - FF8110
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Oswald:600|Bitter');
-@font-face {
-	font-family: 'Sequel Rounded';
-	src: url('/assets/fonts/OGJ Type Design - Sequel Rounded Extended.otf'),
-		url('/assets/fonts/OGJ Type Design - Sequel Rounded Extended.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-}
-
-html, body {
-	margin:0;
-	padding:0;
-	height:100%;
-  font-size:12px;
-}
-h1 {
-  font-family: 'Sequel Rounded', sans-serif;
-  position: absolute;
-  top: 60%;
-  color: white;
-  letter-spacing: .6em;
-  left: 0;
-  right: 0;
-  margin: auto;
-  display: inline-block;
-  text-align: center;
-}
-h2 {
-  font-family: 'Oswald', sans-serif;
-  text-align: center;
-
-	margin: 0 0 53px 0;
-	letter-spacing: 1.4px;
-	font-size: 3.8em;
-}
-p {
-  font-family: 'Bitter', serif;
-	letter-spacing: 1px;
-	margin-bottom: 33px;
-
-
-  font-size: 1.8em;
-	line-height: 1.4;
-}
-section {
-  position: relative;
-}
-
-/*  NAVIGATION  */
-header {
-  background: linear-gradient(to right, rgba(68,68,67,0), rgba(68,68,67,.3) 30%, rgba(68,68,67,.7) 40%);
-  position: absolute;
-  z-index: 99;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-	top: 5%;
-  font-family: 'Sequel Rounded', sans-serif;
-  letter-spacing: .2em;
-	/* to adjust font/height of header */
-  max-height: 47px;
-	font-size: .8em;
-}
-header ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-header > ul > li {
-  display: inline-block;
-  vertical-align: top;
-  cursor: pointer;
-	/* to adjust font/height of header */
-	padding: 18px 6%;
-}
-/* nested nav */
-header ul ul {
-  border-top: 1px solid #FF8110;
-  display: block;
-  background: #444443;
-	margin: 17px -20% 0;
-}
-header ul ul li {
-  font-size: .9em;
-  cursor: pointer;
-  color: #fff;
-	padding: 12px 0;
-	position: relative;
-	/* to adjust font/height of header */
-	margin: 0 -20px;
-}
-header a {
-  text-decoration: none;
-}
-header a, header a:visited, header a:hover, header a:active {
-  color: inherit;
-}
-.arrow-down {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #FF8110;
-  margin: 0 auto 9px;
-}
-.hover-over-services {
-  border-radius: 6.5px;
-  background: #444443;
-}
-.underlined {
-	width:50%;
-	border-bottom:1px solid #FF8110;
-	margin: 0 auto;
-	position: absolute;
-  bottom: 0; left: 0; right: 0;
-}
-
 /*  HERO  */
 .img-div {
   background-position: center;
@@ -152,7 +28,6 @@ header a, header a:visited, header a:hover, header a:active {
 	padding: 66px 0 18%;
 }
 .section1 .content {
-	width: 60%;
 	margin: 0 0 0 22%;
 	width: 62%;
 }
@@ -230,17 +105,6 @@ header a, header a:visited, header a:hover, header a:active {
   background: #B5B2AA;
 	margin-bottom: -2px;
 	padding: 21% 4% 1% 30%;
-
-}
-.section5 .img-wrapper {
-	padding-bottom: 48%;
-    left: 0;
-    top: 6%;
-    width: 88%;
-}
-.section5 .img-div {
-  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
-	background-size:cover;
 }
 .section5 h2 {
   text-align: left;
@@ -250,16 +114,25 @@ header a, header a:visited, header a:hover, header a:active {
   width: 100%;
   position: absolute;
 }
-.section5 .content > img {
-  position: absolute;
-  width: 23%;
-  left: -192px;
-  top: -136px;
-}
 .section5 .hr {
 	width: 77%;
-  border-top: 4px solid #828680;
+  border-top: 4px solid #848881;
   margin: 20px 0 31px 19px;
+}
+.section5 .hr img {
+	position: absolute;
+  left: -230px;
+  top: -26px;
+  width: 250px;
+}
+.section5 .diagonal-line {
+	width: 96px;
+	height: 29px;
+	border-bottom: 4px solid #848881;
+	-webkit-transform: translateY(-20px) translateX(5px) rotate(27deg);
+	position: absolute;
+	top: 9%;
+	left: -7%;
 }
 
 footer {
@@ -273,70 +146,21 @@ footer {
 	padding-bottom: 36%;
 }
 
-/* -------------------------------------- */
-/************* MOBILE ONLY ****************/
-/* -------------------------------------- */
+/* ------------------------------------------ */
+/************* MEDIA QUERIES ****************/
+/* ------------------------------------------ */
+
+@media only screen and (max-width: 399px) {
+	.section4 {
+		padding: 17% 4% 56%;
+	}
+	.section4 h2 {
+    margin: 0 -1% 11%;
+	}
+}
+
 @media only screen and (max-width: 575px) {
-	p {
-		line-height: 1.3;
-		font-size: 1em;
-	}
-	h2 {
-		font-size: 1.8em;
-		margin: -1px 0 25px 0;
-		text-align: center;
-	}
-	header {
-		top: 0;
-		max-height: 39px;
-		background: rgba(12,12,12,.4);
-		font-size: .6em;
-		text-align: left;
-		letter-spacing: .1em;
-	}
-	header img {
-		position: absolute;
-		width: 31px;
-		top: 4px;
-		left: 3%;
-	}
-	header > ul {
-		-webkit-padding-start: 0px;
-		display: inline-block;
-		margin-left: 12%;
-		width: 100%;
-	}
-	header > ul > li {
-		padding: 16px 0;
-		text-align: center;
-	}
-
-	header > ul > li:first-child {
-		width: 39%;
-	}
-	header > ul > li:nth-child(2) {
-		width: 22%;
-	}
-	header > ul > li:last-child {
-		width: 22%;
-		margin-right: 3%;
-	}
-
-	header ul ul li {
-		font-size: .8em;
-	}
-	header ul ul {
-		background: none;
-		margin: 16px auto 0;
-	}
-	.arrow-down {
-		border-top: 6px solid #FF8110;
-	}
-	.services-expanded {
-		background: rgba(12,12,12,.7);
-		color: #FF8110;
-	}
-
+	
 	.hero .img-div {
 		background:url('/assets/hero_mobile.png') no-repeat center;
 		background-size:cover;
@@ -345,140 +169,306 @@ footer {
 		padding-bottom: 180%;
 	}
 
-	.content {
-		width: 90%;
-		margin: 0px auto;
-		padding: 15px 0 0 0;
+	.section1 {
+		padding: 10% 5% 58%;
 	}
 	.section1 .content {
-		margin: 30px auto 0;
-		padding-bottom: 20%;
+		margin: 0 auto;
+		width: 100%;
 	}
-	.section1 img {
-		bottom: 15%;
-		width: 55%;
-		max-width: 255px;
-	}
-
-	.section2 img {
-		width: 60%;
-    top: -4%;
-    left: 12%;
-	}
-	.section2 .content {
-    margin: -1% auto 0;
-	}
-
-	.section3 .content {
-    width: 90%;
-		margin: 0px auto;
-		padding: 15px 0 0 0;
-	}
-	.section3 .content img {
-    position: absolute;
+	.section1 .img-wrapper {
+		-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    right: 0;
-    top: -13%;
-	}
-	.section3 h2 {
-		display: block;
-		vertical-align: bottom;
-		margin-left: auto;
-		}
-	.section3 > img {
-		width: 100%;
-    top: 1%;
-    left: 0;
+    filter: FlipH;
+    -ms-filter: "FlipH";
+		right: 2%;
+		bottom: 2%;
+		width: 81%;
+		left: auto;
+		padding-bottom: 58%;
 	}
 
-	.section4 .content {
-		margin: -1% auto 15%;
+	.section2 {
+		padding: 13% 5% 55%;
+		color: #fff;
+	}
+	.section2 h2 {
+		margin: 0px -3% 25px;
+	}
+	.section2 .img-wrapper {
+    padding-bottom: 70%;
+    width: 80%;
+    bottom: 2%;
+    right: 5%;
+		top: auto;
+	}
+
+	.section3 {
+    padding: 12% 6% 39%;
+	}
+	.section3 .content img {
+		width: 70%;
+		display: block;
+		top: auto;
+		left: auto;
+		margin: 0 0 9% 6%;
+	}
+	.section3 h2 {
+		display: none;
+	}
+	.section3 .img-wrapper {
+		padding-bottom: 54%;
+	  bottom: 2%;
+	  top: auto;
+	  width: 100%;
+	  left: -3%;
+	}
+
+	.section4 {
+		padding: 17% 4% 51%;
+	}
+	.section4 h2 {
+		font-size: 1.9em;
+		margin: 0 auto 11%;
 	}
 	.climbers-chart-mobile {
 		bottom: 15%;
     width: 45%;
     right: -2%;
 	}
+	.section4 .img-wrapper {
+		width: 80%;
+		padding-bottom: 57%;
+		bottom: 2%;
+		right: -2%;
+	}
 
-
-	.section5 .content {
-		margin: -1px auto 0;
+	.section5 {
+		padding: 10% 0 89%;
+	}
+	.section5 .hr {
+		display: none;
 	}
 	.section5 h2 {
 		text-align: center;
+		margin: 0 auto 8%;
+	}
+	.section5 .content {
+		padding: 0 5%;
 	}
 
-	footer {
+	.section5 .img-div {
 	  background:url('/assets/10zing_mobileHP_footer.png') no-repeat center;
 	  background-size:cover;
 	}
-	footer {
+	.section5 .img-wrapper {
 		padding-bottom: 107%;
+		bottom: 0;
+	}
+
+	footer {
+		display: none;
 	}
 }
+
+/******** SMALLEST SCREENS ********/
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+	h2 {
+		font-size: 2.3em;
+	}
+
+	header {
+		font-size: .7em;
+	}
+	header > ul {
+		margin-left: 13%;
+	}
+	header ul ul li {
+		padding: 11px 0;
+	}
+	.arrow-down {
+		margin: 0 auto 1px;
+	}
+	header img {
+		left: 2%;
+		width: 39px;
+	}
+	.section1 {
+		padding: 10% 5% 58%;
+	}
+	.section4 h2 {
+		font-size: 2.3em;
+	}
+
+	header > ul > li:first-child {
+		width: 40%;
+	}
+	header > ul > li:nth-child(2) {
+		width: 20%;
+	}
+	header > ul > li:last-child {
+		width: 22%;
+	}
+}
+
 /******** DESKTOP ONLY ********/
 @media only screen and (min-width: 576px) {
   .navigation li:hover {
     color: #FF8110;
   }
+	.section5 .img-wrapper {
+		padding-bottom: 48%;
+	  left: 0;
+	  top: 6%;
+	  width: 88%;
+	}
+	.section5 .img-div {
+	  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
+		background-size:cover;
+	}
 }
-
-/* ------------------------------------------- */
-/**************** MEDIA QUERIES ****************/
-/* ------------------------------------------- */
 
 /******** SMALL SCREENS ********/
 @media only screen and (min-width: 576px) and (max-width: 958px) {
 
-	.section1 img {
-		bottom: 27%;
+	h2 {
+		font-size: 2em;
+		margin: 0 0 34px 0;
+	}
+	p {
+		font-size: .9em;
+		margin-bottom: 18px;
+	}
+	header {
+		top: 2.5%;
+		font-size: .4em;
+		max-height: 24px;
+	}
+	header > ul {
+		padding: 9px 0;
+	}
+	.sub-nav-wrapper {
+    margin: -10px -34% 0;
+		padding: 10px 0 0 0;
+	}
+	header ul ul {
+		margin: 8px auto 0;
+		padding: 0 0 10px;
+		width: 80%;
+		display: block;
+	}
+	header ul ul li {
+		padding: 8px 0;
+	}
+	.arrow-down {
+		border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FF8110;
+    margin: 0 auto 0;
 	}
 
-	.section2 .content {
-		margin: 0 auto 0 19%;
-	}
-	.section2 img {
-		top: -18%;
-		left: 5%;
+	.section1 {
+		padding: 5% 0 18%;
 	}
 
-	.section5 .content > img {
-	  left: -156px;
-	  top: -110px;
+	.section3 .content img {
+		width: 3.5em;
 	}
-	.section5 > img {
-		width: 70%;
-    top: -11%;
+	.section3 h2 {
+		margin: 0 0 17px 2px;
+	}
+
+	.section5 .hr {
+    width: 400px;
+    border-top: 3px solid #848881;
+    margin: 10px 0 15px 6px;
+	}
+	.section5 .hr img {
+		left: -194px;
+		top: -44px;
+		width: 200px;
 	}
 }
 
-/******** MEDIUM SCREENS ********/
-@media only screen and (min-width: 959px) {
-
+@media only screen and (min-width: 576px) and (max-width: 700px) {
 	h2 {
-		font-size: 2.6em;
+		font-size: 1.7em;
+		margin: 0 0 20px 0;
 	}
 	p {
-		font-size: 1.3em;
+		font-size: .7em;
+		margin-bottom: 10px;
 	}
-	/* .content {
-		width: 50%;
+
+	.section3 .content img {
+		width: 2.5em;
+    top: 9px;
+	}
+
+	.section5 h2 {
+		font-size: 1.7em;
+	}
+	.section5 .img-wrapper {
+    padding-bottom: 48%;
+    left: -6px;
+    top: 9%;
+    width: 92%;
+	}
+	.section5 .hr {
+		width: 345px;
+		border-top: 2px solid #848881;
+		margin: 10px 0 15px 6px;
+	}
+	.section5 .hr img {
+		left: -113px;
+		top: -14px;
+		width: 120px;
+	}
+
+}
+
+
+/******** MEDIUM SCREENS ********/
+@media only screen and (min-width: 959px) and (max-width: 1249px) {
+
+	h2 {
+		font-size: 2.7em;
+		margin: 0 0 38px 0;
+	}
+	p {
+		font-size: 1.2em;
+		margin-bottom: 22px;
+	}
+
+	.section1 {
+		padding: 5% 0 18%;
+	}
+	.section3 {
+		padding: 8% 6% 11% 32%;
+	}
+	.section3 .content img {
+		width: 5em;
+	}
+	.section3 h2 {
+		margin: 0 0 38px 2px;
+	}
+
+	/* .section5 .h4 {
+		margin: 20px 0 19px 19px;
 	} */
-
-	.section1 img {
-    width: 40%;
+	.section5 h2 {
+		font-size: 2.6em;
 	}
-
-
-
-
-
-
+	.section5 .hr img {
+	  top: -46px;
+	}
+}
 
 
 /******** LARGE SCREENS ONLY ********/
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1250px) and (max-width: 1600px){
 	h2 {
 		font-size: 3.8em;
 	}
@@ -486,39 +476,55 @@ footer {
 		font-size: 1.8em;
 		line-height: 1.3;
 	}
+}
 
-	/* .section1 img {
-		bottom: 21%;
-	} */
-
-	/* .section2 .content {
-    max-height: none;
+@media only screen and (min-width: 1601px) and (max-width: 2199) {
+	h2 {
+		font-size: 4.8em;
+		margin: 0 0 62px 0;
 	}
-	.section2 img {
-		top: -24%;
-	} */
-
-	/* .section3 img {
-		width: 50%;
-    left: 4%;
-		max-width: none;
-    top: 18%;
+	p {
+		font-size: 2.1em;
+		line-height: 1.3;
 	}
-	.section3 h2 {
-		margin-left: 19px;
-	} */
-
-	/* .section4 .content {
-		width: 60%;
-    margin: 0 auto 10% 12%;
+	.section3 {
+		padding: 9% 6% 15% 32%;
 	}
-	.section4 .chart-img {
-		top: 57%;
+	.section5 .img-wrapper {
+		width: 91%;
 	}
-	.section4 .climbers-img {
-		top: 35%;
-	} */
+	.section5 .hr img {
+    left: -280px;
+    top: -29px;
+    width: 300px;
+	}
+}
 
-
-
+@media only screen and (min-width: 2200px) {
+	h2 {
+		font-size: 6.8em;
+		margin: 0 0 95px 0;
+	}
+	p {
+		font-size: 3.4em;
+    line-height: 1.2;
+	}
+	.section1 {
+		padding: 5% 0 18%;
+	}
+	.section3 .content img {
+    width: 10.3em;
+    top: 43px;
+	}
+	.section5 .hr img {
+    left: -380px;
+    top: -40px;
+    width: 400px;
+	}
+	.section5 .img-wrapper {
+    padding-bottom: 47%;
+    left: 8%;
+    top: 2%;
+    width: 83%;
+	}
 }
