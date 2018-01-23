@@ -10,11 +10,12 @@ $(document).ready(function(){
 
   if ($(window).width() < 576) {
 
+    // index
     $('.navigation').before('<img src="/assets/orange_logo.png">');
-    $('.diagonal.section4 .content').after('<img class="climbers-chart-mobile" src="/assets/Climbers_Chart_MobileHome.png">');
-
+    // $('.diagonal.section4 .content').after('<img class="climbers-chart-mobile" src="/assets/Climbers_Chart_MobileHome.png">');
     $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
 
+    // about
 
     $('.navigation li:first-child').click(function(){
       if (!$(this).hasClass('services-expanded')) {
@@ -35,13 +36,11 @@ $(document).ready(function(){
 
   } else {
 
-    $('.diagonal.section4 .content').after('<img class="climbers-img" src="/assets/climbers_fromside.png"><img class="chart-img" src="/assets/chart.png">');
-    // $('.section5 .content').before('<img src="/assets/climber_lookingout_backdrop.png">');
-
-
-
+    // index
+    // $('.diagonal.section4 .content').after('<img class="climbers-img" src="/assets/climbers_fromside.png"><img class="chart-img" src="/assets/chart.png">');
     $('.section3 h2').before('<img src="/assets/orange_key.png">');
 
+    // about
 
 
     // handler for marketing services nav list
@@ -49,7 +48,6 @@ $(document).ready(function(){
       $('#services').show();
       $(this).children('div').addClass('hover-over-services');
       $(this).find('ul').addClass('hover-over-services-ul');
-
 
       // marketing services sub-nav
       $('#services li').hover(function(){

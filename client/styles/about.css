@@ -1,3 +1,348 @@
-body {
-  color: blue;
+section {
+  position: relative;
+}
+
+/*  HERO  */
+.img-div {
+  background-position: center;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+.img-wrapper {
+	position: absolute;
+	width: 100%;
+}
+.outer-img-wrapper {
+	position: absolute;
+}
+.hero .img-div {
+  background:url('/assets/.png') no-repeat center;
+  background-size:cover;
+}
+.hero .img-wrapper {
+	padding-bottom: 57%;
+	position: relative;
+}
+
+/*  SECTIONS  */
+.section1 {
+  background: #fff;
+	padding: 66px 0 18%;
+}
+.about.section1 {
+  padding: 4% 0 18%;
+}
+.about.section1 p {
+  margin-left: 10%;
+}
+.section1 .img-wrapper {
+	padding-bottom: 24%;
+  width: 34%;
+  left: 4%;
+	bottom: 0;
+}
+.section1 .img-div {
+  background:url("/assets/white_climbers.png") no-repeat center;
+	background-size:cover;
+}
+
+/* BIOS */
+.about.section2 {
+  background: #262626;
+}
+
+.about.section2 .outer-img-wrapper {
+  width: 78%;
+  position: relative;
+  margin: 0 auto;
+  bottom: auto;
+  right: auto;
+}
+.about.section2 .img-wrapper {
+  padding-bottom: 98%;
+}
+.about .bio.alex .img-div {
+  background:url("/assets/alex_mobile.png") no-repeat center;
+  background-size:cover;
+}
+.about .bio.juan .img-div {
+  background:url("/assets/juan_mobile.png") no-repeat center;
+  background-size:cover;
+}
+
+/* ------ */
+.section5.about {
+  background: #b3b0a6;
+	/* margin-bottom: -2px;
+	padding: 21% 4% 1% 30%; */
+}
+/* .section5 h2 {
+  text-align: left;
+	margin: 0;
+}
+.section5 > img {
+  width: 100%;
+  position: absolute;
+} */
+
+footer {
+  background:url('/assets/footer.png') no-repeat center;
+  background-position: center;
+  background-size:cover;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+footer {
+	padding-bottom: 36%;
+}
+
+
+/***** ALL MOBILE *****/
+@media only screen and (max-width: 575px) {
+
+	.hero .img-div {
+		background:url('/assets/About_hero_mobile.png') no-repeat center;
+		background-size:cover;
+	}
+	.hero .img-wrapper {
+		padding-bottom: 180%;
+	}
+
+	.section1 .content {
+		margin: 0 auto;
+		width: 100%;
+	}
+	.section1 .img-wrapper {
+		-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+		right: 2%;
+		bottom: 2%;
+		width: 81%;
+		left: auto;
+		padding-bottom: 58%;
+	}
+
+  .about.section2 .outer-img-wrapper {
+    width: 78%;
+  }
+  .about.section2 h2 {
+      margin: 0 0 20% 0;
+  }
+
+
+
+
+	.section5.about {
+		padding: 10% 0 106%;
+	}
+	/* .section5 h2 {
+		text-align: center;
+		margin: 0 auto 8%;
+	}
+	.section5 .content {
+		padding: 0 5%;
+	} */
+
+	.section5.about .img-div {
+	  background:url('/assets/About_footer_mobile.png') no-repeat center;
+	  background-size:cover;
+	}
+	.section5.about .img-wrapper {
+		position: relative; width: 100%;
+		padding-bottom: 169%;
+	}
+	/* .section5 .outer-img-wrapper {
+		bottom: 0;
+		width: 100%;
+	} */
+
+	footer {
+		display: none;
+	}
+}
+
+/* ***** MOBILE - SUB SECTION A **** */
+@media only screen and (max-width: 399px) {
+	.section4 {
+		padding: 17% 4% 56%;
+	}
+	.section4 h2 {
+    margin: 0 -1% 11%;
+	}
+}
+
+/* ***** MOBILE - SUB SECTION B **** */
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+	.section1 {
+		padding: 10% 5% 58%;
+	}
+	.section4 h2 {
+		font-size: 2.3em;
+	}
+}
+
+/******** ALL DESKTOP ********/
+@media only screen and (min-width: 576px) {
+
+  .about .content {
+    width: 71%;
+    margin: 0 auto;
+  }
+  .about .bio {
+    width: 42%;
+    display: inline-block;
+  }
+  .about .bio.juan {
+    float: right;
+  }
+  .about.section2 {
+  	padding: 8% 0% 0%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 9% 0;
+  }
+
+
+
+	.section5 .outer-img-wrapper {
+		left: 0;
+		top: 6%;
+		width: 88%;
+	}
+	.section5 .img-wrapper {
+		padding-bottom: 56%;
+		position: relative; width: 100%;
+	}
+	.section5 .img-div {
+	  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
+		background-size:cover;
+	}
+}
+
+/******** DESKTOP SUB SECTION A ********/
+@media only screen and (min-width: 576px) and (max-width: 958px) {
+
+	.section1 {
+		padding: 5% 0 18%;
+	}
+
+	.section3 .content img {
+		width: 3.5em;
+	}
+	.section3 h2 {
+		margin: 0 0 17px 2px;
+	}
+
+	.section5 .hr {
+    width: 400px;
+    border-top: 3px solid #848881;
+    margin: 10px 0 15px 6px;
+	}
+	.section5 .hr img {
+		left: -194px;
+		top: -44px;
+		width: 200px;
+	}
+}
+
+/******** DESKTOP SUB SUB SECTION (sub section of A)********/
+@media only screen and (min-width: 576px) and (max-width: 700px) {
+
+	.section3 .content img {
+		width: 2.5em;
+    top: 9px;
+	}
+
+	.section5 h2 {
+		font-size: 1.7em;
+	}
+	.section5 .img-wrapper {
+    padding-bottom: 48%;
+    left: -6px;
+    top: 9%;
+    width: 92%;
+	}
+	.section5 .hr {
+		width: 345px;
+		border-top: 2px solid #848881;
+		margin: 10px 0 15px 6px;
+	}
+	.section5 .hr img {
+		left: -113px;
+		top: -14px;
+		width: 120px;
+	}
+
+}
+
+/******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
+@media only screen and (min-width: 959px) and (max-width: 1249px) {
+
+	.section1 {
+		padding: 5% 0 18%;
+	}
+	.section3 {
+		padding: 8% 6% 11% 32%;
+	}
+	.section3 .content img {
+		width: 5em;
+	}
+	.section3 h2 {
+		margin: 0 0 38px 2px;
+	}
+
+	/* .section5 .h4 {
+		margin: 20px 0 19px 19px;
+	} */
+	.section5 h2 {
+		font-size: 2.6em;
+	}
+	.section5 .hr img {
+	  top: -46px;
+	}
+}
+
+/******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
+@media only screen and (min-width: 1250px) and (max-width: 1600px){
+
+}
+
+/******** DESKTOP SUBSECTION - LARGE SCREENS ********/
+@media only screen and (min-width: 1601px) and (max-width: 2199) {
+	.section3 {
+		padding: 9% 6% 15% 32%;
+	}
+	.section5 .img-wrapper {
+		width: 91%;
+	}
+	.section5 .hr img {
+    left: -280px;
+    top: -29px;
+    width: 300px;
+	}
+}
+
+/******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
+@media only screen and (min-width: 2200px) {
+	.section1 {
+		padding: 5% 0 18%;
+	}
+	.section3 .content img {
+    width: 10.3em;
+    top: 43px;
+	}
+	.section5 .hr img {
+    left: -380px;
+    top: -40px;
+    width: 400px;
+	}
+	.section5 .img-wrapper {
+    padding-bottom: 47%;
+    left: 8%;
+    top: 2%;
+    width: 83%;
+	}
 }
