@@ -137,7 +137,6 @@ header a, header a:visited, header a:hover, header a:active {
 /* ------------------------------------------
 /************* MEDIA QUERIES ****************/
 /* ---------------------------------------- */
-
 /*
 Mobile <= 576
 - sub range: 0-399
@@ -151,6 +150,9 @@ Desktop = 576+
 - 1601-2199
 - 2200+ (thunderbolt)
 /*
+/* ------------------------------------------
+/*******************************************/
+/* ---------------------------------------- */
 
 /***** ALL MOBILE *****/
 @media only screen and (max-width: 575px) {
@@ -182,7 +184,7 @@ Desktop = 576+
     -webkit-padding-start: 0px;
     display: inline-block;
     width: 100%;
-    /* padding: 0 0 0 16%; */
+    padding: 0 0 0 16%;
   }
 
   header > ul > li {
@@ -358,7 +360,7 @@ Desktop = 576+
 }
 
 /******** DESKTOP SUBSECTION - LARGE SCREENS ********/
-@media only screen and (min-width: 1601px) and (max-width: 2199) {
+@media only screen and (min-width: 1601px) and (max-width: 2199px) {
 	h2 {
 		font-size: 4.8em;
 		margin: 0 0 62px 0;

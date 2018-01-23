@@ -15,36 +15,11 @@ section {
 .outer-img-wrapper {
 	position: absolute;
 }
-.hero .img-div {
-  background:url('/assets/.png') no-repeat center;
-  background-size:cover;
-}
-.hero .img-wrapper {
-	padding-bottom: 57%;
-	position: relative;
-}
+
 
 /*  SECTIONS  */
-.section1 {
-  background: #fff;
-	padding: 66px 0 18%;
-}
-.about.section1 {
-  padding: 4% 0 18%;
-}
-.about.section1 p {
-  margin-left: 10%;
-}
-.section1 .img-wrapper {
-	padding-bottom: 24%;
-  width: 34%;
-  left: 4%;
-	bottom: 0;
-}
-.section1 .img-div {
-  background:url("/assets/white_climbers.png") no-repeat center;
-	background-size:cover;
-}
+
+
 
 /* BIOS */
 .about.section2 {
@@ -95,17 +70,35 @@ footer {
 	padding-bottom: 36%;
 }
 
+/*
+Mobile <= 576
+- sub range: 0-399
+- sub range: 400-575
+
+Desktop = 576+
+- 576-958
+  - 576-700
+- 959-1249
+- 1250-1600
+- 1601-2199
+- 2200+ (thunderbolt)
+/*
 
 /***** ALL MOBILE *****/
 @media only screen and (max-width: 575px) {
 
-	.hero .img-div {
+  .hero .img-div {
+    background:url('/assets/About_hero_mobile.png') no-repeat center;
+    background-size:cover;
+  }
+
+	/* .hero .img-div {
 		background:url('/assets/About_hero_mobile.png') no-repeat center;
 		background-size:cover;
 	}
 	.hero .img-wrapper {
 		padding-bottom: 180%;
-	}
+	} */
 
 	.section1 .content {
 		margin: 0 auto;
@@ -125,12 +118,29 @@ footer {
 		padding-bottom: 58%;
 	}
 
+  .section1-v2 {
+    padding: 6% 1% 11% 4%;
+  }
+  .section1-v2 h2 {
+    margin: 0 auto 11%;
+  }
+  .section1-v2 p {
+    font-size: 1.4em;
+  }
+
+  .about.section2 {
+    padding: 13% 5% 16%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 20% 0;
+  }
+  .bio.alex {
+    margin-bottom: 75px;
+  }
   .about.section2 .outer-img-wrapper {
     width: 78%;
   }
-  .about.section2 h2 {
-      margin: 0 0 20% 0;
-  }
+
 
 
 
@@ -179,24 +189,52 @@ footer {
 	.section1 {
 		padding: 10% 5% 58%;
 	}
-	.section4 h2 {
-		font-size: 2.3em;
-	}
-}
 
+  /* .section1-v2 {
+    padding: 13% 5% 16%;
+  } */
+
+}
+/* *************************** */
 /******** ALL DESKTOP ********/
+/* **************************** */
+
 @media only screen and (min-width: 576px) {
 
+  /* hero */
+  .hero .img-div {
+    background:url('/assets/About_hero_desktop.png') no-repeat center;
+    background-size:cover;
+  }
+
+  /* about section */
+  .section1-v2 {
+    padding: 4% 14% 20%;
+  }
+  .section1-v2 p {
+    padding-left: 11%;
+  }
+  .section1-v2 img {
+    position: absolute;
+    width: 24%;
+    right: 5%;
+    bottom: 10%;
+  }
+
+  /* bio section */
   .about .content {
-    width: 71%;
+    width: 80%;
     margin: 0 auto;
   }
   .about .bio {
-    width: 42%;
+    width: 44%;
     display: inline-block;
   }
   .about .bio.juan {
     float: right;
+  }
+  .about .bio.juan p {
+    padding-left: 2%;
   }
   .about.section2 {
   	padding: 8% 0% 0%;
@@ -204,52 +242,67 @@ footer {
   .about.section2 h2 {
     margin: 0 0 9% 0;
   }
+  .about.section2 .outer-img-wrapper {
+    width: 60%;
+  }
+  .about h3 {
+    font-size: 1em;
+    margin: 1% 0 7% 0;
+  }
 
-
-
-	.section5 .outer-img-wrapper {
-		left: 0;
-		top: 6%;
-		width: 88%;
-	}
+  /* footer */
+  .section5.about {
+    padding: 5% 0 45%;
+  }
+  .section5 .outer-img-wrapper {
+    width: 100%;
+    left: auto;
+    top: auto;
+    bottom: 0;
+  }
 	.section5 .img-wrapper {
-		padding-bottom: 56%;
-		position: relative; width: 100%;
+    padding-bottom: 73%;
+    left: auto;
+    top: auto;
+    width: 100%;
 	}
 	.section5 .img-div {
-	  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
+	  background:url("/assets/About_footer_desktop.png") no-repeat center;
 		background-size:cover;
 	}
+  .section5.about .content {
+    width: 65%;
+  }
+  .section5.about h2 {
+    text-align: center;
+    margin: 0 0 27px 0;
+  }
 }
 
-/******** DESKTOP SUB SECTION A ********/
+/******** DESKTOP SUB SECTION A (effectively 700 - 958) ********/
 @media only screen and (min-width: 576px) and (max-width: 958px) {
 
-	.section1 {
-		padding: 5% 0 18%;
-	}
+  .section1-v2 h2 {
+    margin: 0 0 5% 0;
+  }
 
-	.section3 .content img {
-		width: 3.5em;
-	}
-	.section3 h2 {
-		margin: 0 0 17px 2px;
-	}
-
-	.section5 .hr {
-    width: 400px;
-    border-top: 3px solid #848881;
-    margin: 10px 0 15px 6px;
-	}
-	.section5 .hr img {
-		left: -194px;
-		top: -44px;
-		width: 200px;
-	}
+  .about.section2 {
+    padding: 5% 0% 4%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 4% 0;
+  }
+  .about .bio.juan p {
+    padding-left: 5%;
+  }
 }
 
 /******** DESKTOP SUB SUB SECTION (sub section of A)********/
 @media only screen and (min-width: 576px) and (max-width: 700px) {
+
+  .section1-v2 {
+    padding: 4% 14% 20%;
+  }
 
 	.section3 .content img {
 		width: 2.5em;
@@ -257,7 +310,7 @@ footer {
 	}
 
 	.section5 h2 {
-		font-size: 1.7em;
+		font-size: 1.8em;
 	}
 	.section5 .img-wrapper {
     padding-bottom: 48%;
@@ -265,17 +318,20 @@ footer {
     top: 9%;
     width: 92%;
 	}
-	.section5 .hr {
-		width: 345px;
-		border-top: 2px solid #848881;
-		margin: 10px 0 15px 6px;
-	}
-	.section5 .hr img {
-		left: -113px;
-		top: -14px;
-		width: 120px;
-	}
+}
 
+/******** DESKTOP SUB SUB SECTION (sub section of A)********/
+@media only screen and (min-width: 701px) and (max-width: 958px) {
+  .section1-v2 {
+    padding: 4% 14% 19%;
+  }
+  .section1-v2 img {
+    bottom: 11%;
+  }
+
+  .about.section2 {
+    padding: 6% 0% 10%;
+  }
 }
 
 /******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
@@ -284,45 +340,89 @@ footer {
 	.section1 {
 		padding: 5% 0 18%;
 	}
-	.section3 {
-		padding: 8% 6% 11% 32%;
-	}
-	.section3 .content img {
-		width: 5em;
-	}
-	.section3 h2 {
-		margin: 0 0 38px 2px;
-	}
 
-	/* .section5 .h4 {
-		margin: 20px 0 19px 19px;
-	} */
-	.section5 h2 {
-		font-size: 2.6em;
-	}
-	.section5 .hr img {
-	  top: -46px;
-	}
+  .about.section2 {
+    padding: 6% 0% 9%;
+  }
+  .about .bio.juan p {
+    padding-left: 5%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 36px 0;
+  }
+  .alex p {
+    margin-left: 6px;
+  }
+  .about h3 {
+    font-size: 1.2em;
+    margin: 2% 0 8% 0;
+  }
+  .about.section2 .juan .outer-img-wrapper {
+    right: -2%;
+  }
+  .about .juan h3 {
+    margin: 2% 0 8% 0;
+  }
+
+  .section5.about {
+    padding: 6% 0 42%;
+  }
+  .section5.about p {
+    font-size: 1.3em;
+  }
+
 }
 
 /******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
 @media only screen and (min-width: 1250px) and (max-width: 1600px){
 
+  h2 {
+    font-size: 3.8em;
+  }
+  p {
+    font-size: 1.8em;
+    line-height: 1.3;
+  }
+
+  .section1-v2 {
+    padding: 4% 14% 18%;
+  }
+
+  .about.section2 h2 {
+    margin: 0 0 4% 0;
+  }
+  .about h3 {
+    font-size: 2.4em;
+  }
+  .about.section2 {
+    padding: 6% 0% 4%;
+  }
+  .about .bio.juan p {
+    padding-left: 6%;
+  }
+  .alex p {
+    margin-left: 6px;
+  }
+
 }
 
 /******** DESKTOP SUBSECTION - LARGE SCREENS ********/
-@media only screen and (min-width: 1601px) and (max-width: 2199) {
-	.section3 {
-		padding: 9% 6% 15% 32%;
-	}
-	.section5 .img-wrapper {
-		width: 91%;
-	}
-	.section5 .hr img {
-    left: -280px;
-    top: -29px;
-    width: 300px;
-	}
+@media only screen and (min-width: 1601px) and (max-width: 2199px) {
+
+  .about.section2 {
+    padding: 6% 0% 7%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 3% 0;
+  }
+  .about.section2 p {
+    font-size: 2.2em;
+  }
+  .about h3 {
+    font-size: 2.5em;
+  }
+
+
 }
 
 /******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
@@ -330,19 +430,30 @@ footer {
 	.section1 {
 		padding: 5% 0 18%;
 	}
-	.section3 .content img {
-    width: 10.3em;
-    top: 43px;
-	}
-	.section5 .hr img {
-    left: -380px;
-    top: -40px;
-    width: 400px;
-	}
-	.section5 .img-wrapper {
-    padding-bottom: 47%;
-    left: 8%;
-    top: 2%;
-    width: 83%;
-	}
+
+  .about.section2 {
+    padding: 6% 0% 7%;
+  }
+  .about.section2 h2 {
+    margin: 0 0 3% 0;
+  }
+  .about.section2 p {
+    font-size: 3.3em;
+    line-height: 1.3;
+    margin-bottom: 50px;
+  }
+  .about h3 {
+    font-size: 3.8em;
+    margin: 1% 0 9% 0;
+  }
+  .alex p {
+    margin-left: 3%;
+  }
+  .about .bio.juan p {
+    padding-left: 4%;
+  }
+  .about .content {
+    width: 75%;
+  }
+
 }

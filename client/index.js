@@ -15,7 +15,7 @@ $(document).ready(function(){
     // $('.diagonal.section4 .content').after('<img class="climbers-chart-mobile" src="/assets/Climbers_Chart_MobileHome.png">');
     $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
 
-    // about
+
 
     $('.navigation li:first-child').click(function(){
       if (!$(this).hasClass('services-expanded')) {
@@ -41,7 +41,7 @@ $(document).ready(function(){
     $('.section3 h2').before('<img src="/assets/orange_key.png">');
 
     // about
-
+    $('#about-section1').append('<img src="/assets/About_excel_desktop.png">');
 
     // handler for marketing services nav list
     $('.navigation li:first-child').hover(function(){
