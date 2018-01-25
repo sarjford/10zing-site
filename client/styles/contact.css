@@ -1,3 +1,315 @@
-body {
-  color: red;
+/* RESET */
+
+input {
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  overflow: visible;
+  padding: 0;
+  width: auto;
 }
+input:focus, textarea:focus {
+   outline: none;
+}
+textarea {
+  -webkit-appearance: none;
+  height: auto;
+  margin: 0; padding: 0;
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+/* STYLES */
+
+input, textarea {
+  background: transparent;
+  font-family: 'Sequel Rounded', sans-serif;
+  color: #fff;
+  border: 1px solid var(--orange);
+  padding: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;
+}
+h2 {
+  color: #fff;
+}
+span, input {
+  font-family: 'Sequel Rounded', sans-serif;
+  color: #fff;
+}
+span,input,textarea {
+  font-size: .9em;
+}
+
+.contact-wrapper {
+  position: relative;
+  top: 20%;
+}
+.contact-form-container {
+  position: relative;
+  margin: 0 auto;
+  background: rgba(44,47,35,.7);
+  padding: 4% 4% 2%;
+}
+.msg {
+  display: none;
+}
+.submit {
+  width: 100%;
+  background: var(--orange);
+  cursor: pointer;
+  margin: -2px auto 0;
+}
+.submit:hover {
+  background: transparent;
+}
+
+/* ***** ALL MOBILE **** */
+@media only screen and (max-width: 575px) {
+  .contact-us {
+    background-position: center;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background:url('/assets/contact_background_mobile.png') no-repeat center;
+    background-size:cover;
+  }
+  .contact-form-container {
+    width: 77%;
+    margin: 0 auto;
+  }
+  .contact-wrapper {
+    top: 16%;
+  }
+  .contact-us h2 {
+    font-size: 1.5em;
+    margin: 0 auto 12%;
+  }
+  .text-box, .message {
+    width: 100%;
+    margin-bottom: 11px;
+  }
+  .message {
+    height: 135px;
+  }
+}
+/* ***** MOBILE - SUB SECTION A **** */
+@media only screen and (max-width: 399px) {
+
+}
+
+/* ***** MOBILE - SUB SECTION B **** */
+@media only screen and (min-width: 400px) and (max-width: 575px) {
+  .contact-wrapper {
+    top: 15%;
+  }
+  .contact-us h2 {
+    font-size: 1.8em;
+    margin: 0 auto 10%;
+  }
+  span, input, textarea {
+    font-size: 1em;
+  }
+  .contact-form-container {
+    padding: 5% 5% 3%;
+    width: 70%;
+  }
+  .message {
+    height: 175px;
+  }
+}
+/******** ALL DESKTOP ********/
+@media only screen and (min-width: 576px) {
+
+  .contact-us {
+    background-position: center;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background:url('/assets/contact_background_desktop.png') no-repeat center;
+    background-size:cover;
+    background-attachment: fixed;
+  }
+  input,textarea {
+    margin-bottom: 7px;
+    font-size: .6em;
+    padding: 2%;
+  }
+  span {
+    font-size: .6em;
+  }
+  .contact-wrapper {
+    position: relative;
+    top: 20%;
+    left: 21%;
+    width: 47%;
+  }
+  .contact-us h2 {
+    font-size: 1.5em;
+    margin: 0 0 30px 0;
+  }
+  .contact-form-container {
+    padding: 4% 4% 2%;
+  }
+  .text-box {
+    width: 49%;
+    display: inline-block;
+  }
+  .message {
+    width: 100%;
+    height: 65px;
+  }
+  .text-box.even {
+    float: right;
+  }
+}
+
+/******** DESKTOP SUB SECTION A ********/
+@media only screen and (min-width: 576px) and (max-width: 958px) {
+
+}
+
+/******** DESKTOP SUB SUB SECTION (sub section of A)********/
+@media only screen and (min-width: 576px) and (max-width: 700px) {
+
+}
+
+/******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
+@media only screen and (min-width: 959px) and (max-width: 1249px) {
+  .contact-wrapper {
+    top: 27%;
+    width: 45%;
+    left: 23%;
+  }
+  .contact-us h2 {
+    font-size: 1.8em;
+    margin: 0 0 40px 0;
+  }
+  span, input, textarea {
+    font-size: .8em;
+  }
+  input, textarea {
+    margin-bottom: 7px;
+  }
+  .message {
+    height: 87px;
+  }
+  /* .contact-form-container {
+    padding: 4% 4% 2%;
+  } */
+}
+
+/******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
+@media only screen and (min-width: 1250px) and (max-width: 1600px){
+  .contact-wrapper {
+    top: 22%;
+    left: 24%;
+    width: 43%;
+  }
+  .contact-us h2 {
+    font-size: 2.3em;
+    margin: 0 0 52px 0;
+  }
+  span, input, textarea {
+    font-size: 1em;
+  }
+  input, textarea {
+    margin-bottom: 12px;
+  }
+  .message {
+    height: 117px;
+  }
+  .contact-form-container {
+    padding: 28px 21px 20px;
+  }
+}
+
+/******** DESKTOP SUBSECTION - LARGE SCREENS ********/
+@media only screen and (min-width: 1601px) and (max-width: 2199px) {
+  .contact-wrapper {
+    top: 27%;
+    left: 23%;
+    width: 44%;
+  }
+  .contact-us h2 {
+    font-size: 2.3em;
+    margin: 0 0 52px 0;
+  }
+  span, input, textarea {
+    font-size: 1.2em;
+  }
+  input, textarea {
+    margin-bottom: 16px;
+  }
+  .message {
+    height: 144px;
+  }
+  /* .contact-form-container {
+    padding: 4% 4% 2%;
+  } */
+
+}
+
+/******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
+@media only screen and (min-width: 2200px) {
+  .contact-wrapper {
+    top: 19%;
+        left: 23%;
+        width: 45%;
+  }
+  .contact-us h2 {
+    font-size: 4.2em;
+        margin: 0 0 104px 0;
+  }
+  span, input, textarea {
+    font-size: 1.9em;
+  }
+  input, textarea {
+    margin-bottom: 25px;
+  }
+  .message {
+    height: 256px;
+  }
+  .contact-form-container {
+    padding: 4% 4% 2%;
+  }
+}
+
+
+/* .contact-us {
+  background-position: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0; right: 0;
+  background:url('/assets/contact_background_desktop.png') no-repeat center center;
+  background-size:cover;
+  background-attachment: fixed;
+} */
+
+/* .img-div {
+  background-position: center;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
+.contact-us .img-wrapper {
+	position: absolute;
+	width: 100%;
+  padding-bottom: 57%;
+}
+.contact-us .img-div {
+  background:url('/assets/contact_background_desktop.png') no-repeat center;
+  background-size:cover;
+} */

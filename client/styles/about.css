@@ -48,17 +48,7 @@ section {
 /* ------ */
 .section5.about {
   background: #b3b0a6;
-	/* margin-bottom: -2px;
-	padding: 21% 4% 1% 30%; */
 }
-/* .section5 h2 {
-  text-align: left;
-	margin: 0;
-}
-.section5 > img {
-  width: 100%;
-  position: absolute;
-} */
 
 footer {
   background:url('/assets/footer.png') no-repeat center;

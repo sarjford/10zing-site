@@ -10,6 +10,10 @@
 	font-style: normal;
 }
 
+:root {
+  --orange: #ee6b00;
+}
+
 html, body {
 	margin:0;
 	padding:0;
@@ -60,7 +64,6 @@ header {
   width: 100%;
   text-align: center;
   color: #fff;
-	top: 5%;
   font-family: 'Sequel Rounded', sans-serif;
   letter-spacing: .2em;
 	/* to adjust font/height of header */
@@ -134,6 +137,7 @@ header a, header a:visited, header a:hover, header a:active {
   bottom: 0; left: 0; right: 0;
 }
 
+
 /* ------------------------------------------
 /************* MEDIA QUERIES ****************/
 /* ---------------------------------------- */
@@ -167,7 +171,7 @@ Desktop = 576+
     text-align: center;
   }
   header {
-    top: 2.5%;
+    top: 0;
     max-height: 56px;
     min-height: 56px;
     background: rgba(12,12,12,.4);
@@ -175,11 +179,30 @@ Desktop = 576+
     text-align: left;
     letter-spacing: .1em;
   }
-  header img {
+
+	header .outer-img-wrapper {
+		position: absolute;
+		width: 36px;
+		top: 9px;
+	}
+	header .img-wrapper {
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+	}
+	header .img-div {
+		background:url("/assets/orange_logo.png") no-repeat center;
+		background-size:cover;
+		background-position: center;
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
+
+  /* header img {
     position: absolute;
     width: 36px;
     top: 9px;
-  }
+  } */
   header > ul {
     -webkit-padding-start: 0px;
     display: inline-block;
@@ -226,21 +249,22 @@ Desktop = 576+
 
 /* ***** MOBILE - SUB SECTION A **** */
 @media only screen and (max-width: 399px) {
-  header img {
+  header .outer-img-wrapper {
     left: 3%;
     top: 10px;
   }
   header > ul {
-    /* padding: 0 0 0 16%; */
+    padding: 0 0 0 13%;
   }
   header > ul > li:first-child {
-    width: 38%;
+    width: 44%;
   }
   header > ul > li:nth-child(2) {
-    width: 20%;
+    width: 18%;
   }
   header > ul > li:last-child {
     width: 21%;
+		margin-right: 0%;
   }
 }
 
@@ -254,7 +278,7 @@ Desktop = 576+
 		font-size: .7em;
 	}
 	header > ul {
-		/* padding: 0 0 0 13%; */
+		padding: 0 0 0 13%;
 	}
 	header ul ul li {
 		padding: 11px 0;
@@ -262,7 +286,7 @@ Desktop = 576+
 	.arrow-down {
 		margin: 0 auto 1px;
 	}
-	header img {
+	header .outer-img-wrapper {
 		left: 5%;
 		width: 39px;
 	}
@@ -282,11 +306,28 @@ Desktop = 576+
   .navigation li:hover {
     color: #FF8110;
   }
+	header .outer-img-wrapper {
+		position: absolute;
+		width: 8%;
+		left: 2%;
+		bottom: -50%;
+	}
+	header .img-wrapper {
+		width: 100%;
+		padding-bottom: 100%;
+		position: relative;
+	}
+	header .img-div {
+	  background:url("/assets/orange_logo.png") no-repeat center;
+		background-size:cover;
+		background-position: center;
+		position: absolute;
+		top: 0; bottom: 0; left: 0; right: 0;
+	}
 }
 
 /******** DESKTOP SUB SECTION A ********/
 @media only screen and (min-width: 576px) and (max-width: 958px) {
-
 	h2 {
 		font-size: 2em;
 		margin: 0 0 34px 0;
@@ -296,7 +337,7 @@ Desktop = 576+
 		margin-bottom: 18px;
 	}
 	header {
-		top: 2.5%;
+		top: 17px;
 		font-size: .4em;
 		max-height: 24px;
 	}
@@ -333,6 +374,10 @@ Desktop = 576+
 		font-size: .7em;
 		margin-bottom: 10px;
 	}
+
+	header {
+		top: 15px;
+	}
 }
 
 /******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
@@ -346,6 +391,40 @@ Desktop = 576+
 		font-size: 1.2em;
 		margin-bottom: 22px;
 	}
+
+	header {
+		top: 30px;
+		max-height: 30px;
+		font-size: .6em;
+	}
+	header > ul {
+		padding: 11px;
+	}
+	.sub-nav-wrapper {
+		margin: -11px -29% 0;
+		padding: 11px 0 0 0;
+		width: 155%;
+	}
+	header ul ul {
+		margin: 11px auto 0px;
+	}
+	.arrow-down {
+		margin: 0 auto 4px;
+		border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FF8110;
+	}
+	header ul ul {
+		padding: 0 0 14px;
+	}
+	header ul ul li {
+		padding: 9px 0;
+		font-size: .7em;
+	}
+	header > ul > li {
+		padding: 0 7%;
+	}
+
 }
 
 /******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
@@ -356,6 +435,10 @@ Desktop = 576+
 	p {
 		font-size: 1.8em;
 		line-height: 1.3;
+	}
+
+	header {
+		top: 30px;
 	}
 }
 
@@ -369,6 +452,9 @@ Desktop = 576+
 		font-size: 2.1em;
 		line-height: 1.3;
 	}
+	header {
+		top: 46px;
+	}
 }
 
 /******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
@@ -380,5 +466,39 @@ Desktop = 576+
 	p {
 		font-size: 3.4em;
     line-height: 1.2;
+	}
+
+	header {
+		top: 67px;
+    font-size: 1.4em;
+    max-height: 80px;
+	}
+	header > ul {
+		padding: 29px 0;
+	}
+	.sub-nav-wrapper {
+		margin: -29px -22% 0;
+    padding: 29px 0 0 0;
+    width: 167%;
+	}
+	header ul ul {
+		margin: 11px auto 0px;
+	}
+	.arrow-down {
+		margin: 0 auto 4px;
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-top: 15px solid #FF8110;
+	}
+	header ul ul {
+		margin: 31px auto 0;
+		border-top: 2px solid #FF8110
+	}
+	header ul ul li {
+		padding: 24px 0;
+		font-size: .7em;
+	}
+	header > ul > li {
+		padding: 0 7%;
 	}
 }

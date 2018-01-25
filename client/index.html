@@ -13,8 +13,8 @@
     position: absolute;
     z-index: 1000;
     opacity: .4;
-    top: 20px;
-    left: -8px;
+    top: 0;
+    left: 0;
     display: none;">
 
     <img id="guide" src="/assets/MobileDropdown-guide copy.png" style="width: 100%;
@@ -34,31 +34,45 @@
     top: -6%;
     display: none;">
 
+    <img id="guide" src="/assets/guide-dropdown.png" style="width: 101%;
+    position: absolute;
+    z-index: 1000;
+    opacity: .4;
+    top: 0;
+    left: 0;
+    display: none;">
+
     <header>
+      <div class="outer-img-wrapper">
+        <div class="img-wrapper">
+          <div class="img-div"></div>
+        </div>
+      </div>
+
       <ul class="navigation">
-        <li>
+        <li id="home">
           <div class="sub-nav-wrapper">
           MARKETING SERVICES
             <ul id="services">
               <div class="arrow-down"></div>
               <li>
-                <a href="#facebook">FACEBOOK ADVERTISING</a>
+                <a id="facebook-link">FACEBOOK ADVERTISING</a>
                 <div></div>
               </li>
               <li>
-                <a href="#paid">PAID SEARCH MARKETING</a>
+                <a id="paid-link">PAID SEARCH MARKETING</a>
                 <div></div>
               </li>
               <li>
-                <a href="#seo">SEO KEYWORD OPTIMIZATION</a>
+                <a id="seo-link">SEO KEYWORD OPTIMIZATION</a>
                 <div></div>
               </li>
               <li>
-                <a href="#measurement">MEASUREMENT & ANALYTICS</a>
+                <a id="measurement-link">MEASUREMENT & ANALYTICS</a>
                 <div></div>
               </li>
               <li>
-                <a href="#cross-channel">CROSS-CHANNEL STRATEGY</a>
+                <a id="cross-channel-link">CROSS-CHANNEL STRATEGY</a>
                 <div></div>
               </li>
             </ul>
