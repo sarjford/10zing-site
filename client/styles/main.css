@@ -57,10 +57,9 @@ p {
 }
 
 
-
 /*  NAVIGATION  */
 header {
-  background: linear-gradient(to right, rgba(68,68,67,0), rgba(68,68,67,.3) 30%, rgba(68,68,67,.7) 40%);
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,.3) 30%, rgba(0,0,0,.6) 40%);
   position: absolute;
   z-index: 99;
   width: 100%;
