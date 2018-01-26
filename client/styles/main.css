@@ -56,6 +56,8 @@ p {
 	line-height: 1.4;
 }
 
+
+
 /*  NAVIGATION  */
 header {
   background: linear-gradient(to right, rgba(68,68,67,0), rgba(68,68,67,.3) 30%, rgba(68,68,67,.7) 40%);
@@ -245,6 +247,17 @@ Desktop = 576+
     background: rgba(12,12,12,.7);
     color: #FF8110;
   }
+
+	.error404 a {
+		font-size: 1em;
+		padding: 15px 25px;
+	}
+	.error404 img {
+		width: 90px;
+	}
+	.error404 p {
+		margin-bottom: 40px;
+	}
 }
 
 /* ***** MOBILE - SUB SECTION A **** */
@@ -308,21 +321,33 @@ Desktop = 576+
   }
 	header .outer-img-wrapper {
 		position: absolute;
-		width: 8%;
-		left: 2%;
-		bottom: -50%;
+		width: 5%;
+		left: 3%;
+		cursor: pointer;
 	}
+
 	header .img-wrapper {
-		width: 100%;
-		padding-bottom: 100%;
+		width: 132%;
+		padding-bottom: 150%;
 		position: relative;
 	}
 	header .img-div {
-	  background:url("/assets/orange_logo.png") no-repeat center;
+	  background:url("/assets/logo_desktop.png") no-repeat center;
 		background-size:cover;
 		background-position: center;
 		position: absolute;
 		top: 0; bottom: 0; left: 0; right: 0;
+	}
+
+	.error404 a {
+		font-size: 1.4em;
+		padding: 24px 38px;
+	}
+	.error404 img {
+		width: 130px;
+	}
+	.error404 p {
+		margin-bottom: 60px;
 	}
 }
 
@@ -336,6 +361,11 @@ Desktop = 576+
 		font-size: .9em;
 		margin-bottom: 18px;
 	}
+
+	header .outer-img-wrapper {
+		top: -11px;
+	}
+
 	header {
 		top: 17px;
 		font-size: .4em;
@@ -364,6 +394,7 @@ Desktop = 576+
 	}
 }
 
+
 /******** DESKTOP SUB SUB SECTION (sub section of A)********/
 @media only screen and (min-width: 576px) and (max-width: 700px) {
 	h2 {
@@ -378,6 +409,10 @@ Desktop = 576+
 	header {
 		top: 15px;
 	}
+}
+
+@media only screen and (min-width: 701px) and (max-width: 958px) {
+
 }
 
 /******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
@@ -396,6 +431,9 @@ Desktop = 576+
 		top: 30px;
 		max-height: 30px;
 		font-size: .6em;
+	}
+	header .outer-img-wrapper {
+		top: -22px;
 	}
 	header > ul {
 		padding: 11px;
@@ -440,6 +478,9 @@ Desktop = 576+
 	header {
 		top: 30px;
 	}
+	header .outer-img-wrapper {
+		top: -20px;
+	}
 }
 
 /******** DESKTOP SUBSECTION - LARGE SCREENS ********/
@@ -452,8 +493,41 @@ Desktop = 576+
 		font-size: 2.1em;
 		line-height: 1.3;
 	}
+
+	header .outer-img-wrapper {
+		top: -31px;
+	}
 	header {
 		top: 46px;
+		max-height: 50px;
+		font-size: 1em;
+	}
+	header > ul {
+		padding: 18px;
+	}
+	.sub-nav-wrapper {
+		margin: -18px -29% 0;
+		padding: 18px 0 0 0;
+		width: 155%;
+	}
+	header ul ul {
+		margin: 18px auto 13px;
+	}
+	.arrow-down {
+		margin: 0 auto 4px;
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-top: 12px solid #FF8110;
+	}
+	header ul ul {
+		padding: 0 0 16px;
+	}
+	header ul ul li {
+		padding: 16px 0;
+		font-size: .7em;
+	}
+	header > ul > li {
+		padding: 0 7%;
 	}
 }
 
@@ -466,6 +540,10 @@ Desktop = 576+
 	p {
 		font-size: 3.4em;
     line-height: 1.2;
+	}
+
+	header .outer-img-wrapper {
+		top: -50px;
 	}
 
 	header {

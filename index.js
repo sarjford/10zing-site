@@ -18,7 +18,6 @@ router.get("/",function(req,res){
 
 router.get("/about",function(req,res){
   console.log(path)
-
   res.sendFile(path + "/views/about.html");
 });
 
@@ -27,10 +26,10 @@ router.get("/contact",function(req,res){
 });
 
 app.use("/",router);
-//
-// app.use("*",function(req,res){
-//   res.sendFile(path + "404.html");
-// });
+
+app.use("*",function(req,res){
+  res.sendFile(path + "/views/404.html");
+});
 
 app.listen(9000, () => {
   console.log('Example app listening on port 9000!');

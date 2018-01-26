@@ -1,3 +1,5 @@
+/* non media query styling basically reflects 1440 since I didn't have mobile assets */
+
 section {
   position: relative;
 }
@@ -16,7 +18,7 @@ section {
 	position: absolute;
 }
 .hero .img-div {
-  background:url('/assets/hero_desktop.png') no-repeat center;
+  background:url('/assets/homepage_hero_desktop.png') no-repeat center;
   background-size:cover;
 }
 .hero .img-wrapper {
@@ -166,14 +168,15 @@ footer {
 /***** ALL MOBILE *****/
 @media only screen and (max-width: 575px) {
 
+  /* hero */
 	.hero .img-div {
-		background:url('/assets/hero_mobile.png') no-repeat center;
+		background:url('/assets/homepage_hero_mobile.png') no-repeat center;
 		background-size:cover;
 	}
 	.hero .img-wrapper {
 		padding-bottom: 180%;
 	}
-
+  /* section 1 */
 	.section1 {
 		padding: 10% 5% 58%;
 	}
@@ -194,7 +197,7 @@ footer {
 		left: auto;
 		padding-bottom: 58%;
 	}
-
+  /* section 2 */
 	.section2 {
 		padding: 13% 5% 51%;
 		color: #fff;
@@ -208,7 +211,7 @@ footer {
 		right: 5%;
 		top: auto;
 	}
-
+  /* section 3 */
 	.section3 {
     padding: 12% 6% 39%;
 	}
@@ -228,7 +231,7 @@ footer {
 	  width: 100%;
 	  left: -3%;
 	}
-
+  /* section 4 */
 	.section4 {
 		padding: 17% 4% 48%;
 	}
@@ -246,9 +249,9 @@ footer {
 		bottom: 2%;
 		right: -2%;
 	}
-
+  /* section 5 */
 	.section5 {
-		padding: 10% 0 89%;
+		padding: 10% 0 97%;
 	}
 	.section5 .hr {
 		display: none;
@@ -260,18 +263,17 @@ footer {
 	.section5 .content {
 		padding: 0 5%;
 	}
-
+  .section5 .outer-img-wrapper {
+    bottom: 0;
+    width: 100%;
+  }
+  .section5 .img-wrapper {
+    position: relative; width: 100%;
+    padding-bottom: 117%;
+  }
 	.section5 .img-div {
 	  background:url('/assets/10zing_mobileHP_footer.png') no-repeat center;
 	  background-size:cover;
-	}
-	.section5 .img-wrapper {
-		position: relative; width: 100%;
-		padding-bottom: 107%;
-	}
-	.section5 .outer-img-wrapper {
-		bottom: 0;
-		width: 100%;
 	}
 
 	footer {
@@ -369,7 +371,6 @@ footer {
 		top: -14px;
 		width: 120px;
 	}
-
 }
 
 /******** DESKTOP SUBSECTION - SMALL/MEDIUM SCREENS ********/
@@ -378,6 +379,7 @@ footer {
 	.section1 {
 		padding: 5% 0 18%;
 	}
+
 	.section3 {
 		padding: 8% 6% 11% 32%;
 	}
@@ -388,9 +390,6 @@ footer {
 		margin: 0 0 38px 2px;
 	}
 
-	/* .section5 .h4 {
-		margin: 20px 0 19px 19px;
-	} */
 	.section5 h2 {
 		font-size: 2.6em;
 	}
@@ -405,38 +404,38 @@ footer {
 }
 
 /******** DESKTOP SUBSECTION - LARGE SCREENS ********/
-@media only screen and (min-width: 1601px) and (max-width: 2199) {
+@media only screen and (min-width: 1601px) and (max-width: 2199px) {
+
 	.section3 {
 		padding: 9% 6% 15% 32%;
 	}
+
 	.section5 .img-wrapper {
-		width: 91%;
+		width: 100%;
 	}
-	.section5 .hr img {
-    left: -280px;
-    top: -29px;
-    width: 300px;
-	}
+  .section5 .hr img {
+    left: -319px;
+    top: -47px;
+    width: 340px;
+  }
+
 }
 
 /******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
 @media only screen and (min-width: 2200px) {
+
 	.section1 {
 		padding: 5% 0 18%;
 	}
+
 	.section3 .content img {
     width: 10.3em;
     top: 43px;
 	}
+
 	.section5 .hr img {
     left: -380px;
     top: -40px;
     width: 400px;
-	}
-	.section5 .img-wrapper {
-    padding-bottom: 47%;
-    left: 8%;
-    top: 2%;
-    width: 83%;
 	}
 }

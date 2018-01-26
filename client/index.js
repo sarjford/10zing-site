@@ -1,9 +1,9 @@
 $(document).ready(function(){
 
   // navigation links
-  // $('#home').click(function(){
-  //   window.location.href="/";
-  // });
+  $('#home').click(function(){
+    window.location.href="/";
+  });
   $('#about').click(function(){
     window.location.href="/about";
   });
@@ -28,13 +28,13 @@ $(document).ready(function(){
     window.location.href="/#cross-channel";
   });
 
-  // MOBILE
+  // MOBILE-SPECIFIC JS
   if ($(window).width() < 576) {
 
-    // index
+    // append h1 image in section 3 on home page
     $('.section3 h2').before('<img class="seo-header" src="/assets/seo_h1_mobile.png">');
 
-    // navigation
+    // handler for marketing services nav list
     $('.navigation li:first-child').click(function(){
       if (!$(this).hasClass('services-expanded')) {
         $('.navigation li').css('padding-bottom', '9px');
@@ -55,12 +55,11 @@ $(document).ready(function(){
   // DESKTOP
   } else {
 
-    // index
+    // append key in section 3 on homepage (alternative to h1 img in mobile)
     $('.section3 h2').before('<img src="/assets/orange_key.png">');
-    // about
+    // excel image only on desktop
     $('#about-section1').append('<img src="/assets/About_excel_desktop.png">');
 
-    // navigation
     // handler for marketing services nav list
     $('.navigation li:first-child').hover(function(){
       $('#services').show();
@@ -84,5 +83,30 @@ $(document).ready(function(){
       });
     });
   }
+
+  // send contact us information
+  $("#contact-form").validate({
+    submitHandler: function(form) {
+      $.ajax({
+        url: "//formspree.io/info@10zingdigital.com",
+        method: "POST",
+        data: {
+          name: $(form).find("input[name='name']").val(),
+          email: $(form).find("input[name='_replyto']").val(),
+          company: $(form).find("input[name='company']").val(),
+          phone: $(form).find("input[name='phone']").val(),
+          message: $(form).find("input[name='message']").val()
+        },
+        dataType: "json",
+        // success: function() {
+        //   $("#success").fadeIn();
+        //   $("#contact-form").fadeOut();
+        // },
+        // error: function() {
+        //   $("#error").fadeIn();
+        // }
+      });
+    }
+  });
 
 });
