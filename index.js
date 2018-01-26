@@ -7,17 +7,14 @@ var path = __dirname + '/client/';
 app.use(express.static('client'));
 
 router.use(function (req,res,next) {
-  console.log("/" + req.method);
   next();
 });
 
 router.get("/",function(req,res){
-  console.log(path)
   res.sendFile(path + "index.html");
 });
 
 router.get("/about",function(req,res){
-  console.log(path)
   res.sendFile(path + "/views/about.html");
 });
 
@@ -32,5 +29,5 @@ app.use("*",function(req,res){
 });
 
 app.listen(9000, () => {
-  console.log('Example app listening on port 9000!');
+  console.log('listening on port 9000!');
 });
