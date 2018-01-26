@@ -141,7 +141,7 @@ section {
 .section5 .hr img {
 	position: absolute;
   left: -230px;
-  top: -26px;
+  top: -27px;
   width: 250px;
 }
 .section5 .diagonal-line {
@@ -339,7 +339,7 @@ footer {
 	}
 	.section5 .hr img {
 		left: -194px;
-		top: -44px;
+		top: -45px;
 		width: 200px;
 	}
 }
@@ -367,8 +367,8 @@ footer {
 		margin: 10px 0 15px 6px;
 	}
 	.section5 .hr img {
-		left: -113px;
-		top: -14px;
+    left: -114px;
+    top: -15px;
 		width: 120px;
 	}
 }
@@ -393,13 +393,20 @@ footer {
 	.section5 h2 {
 		font-size: 2.6em;
 	}
+  .section5 .hr {
+    width: 502px;
+  }
 	.section5 .hr img {
-	  top: -46px;
+	  top: -48px;
 	}
 }
 
 /******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
 @media only screen and (min-width: 1250px) and (max-width: 1600px){
+  .section5 .hr {
+    width: 725px;
+    border-top: 3px solid #848881;
+  }
 
 }
 
@@ -413,9 +420,15 @@ footer {
 	.section5 .img-wrapper {
 		width: 100%;
 	}
+
+  .section5 .hr {
+    width: 908px;
+    border-top: 5px solid #848881;
+
+  }
   .section5 .hr img {
     left: -319px;
-    top: -47px;
+    top: -49px;
     width: 340px;
   }
 
@@ -435,7 +448,11 @@ footer {
 
 	.section5 .hr img {
     left: -380px;
-    top: -40px;
+    top: -42px;
     width: 400px;
 	}
+  .section5 .hr {
+    border-top: 5px solid #848881;
+    width: 1275px;
+  }
 }
