@@ -49,11 +49,11 @@ input, textarea {
 h2 {
   color: #fff;
 }
-span, input {
+span.required, input {
   font-family: 'Sequel Rounded', sans-serif;
   color: #fff;
 }
-span,input,textarea {
+span.required,input,textarea {
   font-size: .9em;
 }
 
@@ -130,7 +130,7 @@ span,input,textarea {
     font-size: 1.8em;
     margin: 0 auto 10%;
   }
-  span, input, textarea {
+  span.required, input, textarea {
     font-size: 1em;
   }
   .contact-form-container {
@@ -157,7 +157,7 @@ span,input,textarea {
     font-size: .6em;
     padding: 2%;
   }
-  span {
+  span.required {
     font-size: .6em;
   }
   .contact-wrapper {
@@ -207,7 +207,7 @@ span,input,textarea {
     font-size: 1.8em;
     margin: 0 0 40px 0;
   }
-  span, input, textarea {
+  span.required, input, textarea {
     font-size: .8em;
   }
   input, textarea {
@@ -229,7 +229,7 @@ span,input,textarea {
     font-size: 2.3em;
     margin: 0 0 52px 0;
   }
-  span, input, textarea {
+  span.required, input, textarea {
     font-size: 1em;
   }
   input, textarea {
@@ -254,7 +254,7 @@ span,input,textarea {
     font-size: 2.3em;
     margin: 0 0 52px 0;
   }
-  span, input, textarea {
+  span.required, input, textarea {
     font-size: 1.2em;
   }
   input, textarea {
@@ -276,7 +276,7 @@ span,input,textarea {
     font-size: 4.2em;
     margin: 0 0 104px 0;
   }
-  span, input, textarea {
+  span.required, input, textarea {
     font-size: 1.9em;
   }
   input, textarea {
