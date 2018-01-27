@@ -1,7 +1,7 @@
 {
   "name": "10zingsite",
   "version": "1.0.0",
-  "description": "",
+  "description": "10ZING is a digital marketing agency.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,7 @@
   "author": "Sarah Ford",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
-    "jquery": "^3.2.1"
+    "express": "^4.16.2"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
