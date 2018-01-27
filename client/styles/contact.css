@@ -6,6 +6,7 @@ input {
   overflow: visible;
   padding: 0;
   width: auto;
+  border-radius: 0;
 }
 input:focus, textarea:focus {
    outline: none;
@@ -21,6 +22,7 @@ textarea {
   -moz-box-shadow: none;
   box-shadow: none;
   resize: none;
+  border-radius: 0;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
@@ -106,7 +108,12 @@ span,input,textarea {
 
 /* ***** MOBILE - SUB SECTION A **** */
 @media only screen and (max-width: 399px) {
-
+  .contact-us h2 {
+    margin: 0 auto 18px;
+  }
+  .message {
+    height: 100px;
+  }
 }
 
 /* ***** MOBILE - SUB SECTION B **** */
