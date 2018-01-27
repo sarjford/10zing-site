@@ -84,29 +84,30 @@ $(document).ready(function(){
     });
   }
 
-  // send contact us information
-  $("#contact-form").validate({
-    submitHandler: function(form) {
-      $.ajax({
-        url: "//formspree.io/info@10zingdigital.com",
-        method: "POST",
-        data: {
-          name: $(form).find("input[name='name']").val(),
-          email: $(form).find("input[name='_replyto']").val(),
-          company: $(form).find("input[name='company']").val(),
-          phone: $(form).find("input[name='phone']").val(),
-          message: $(form).find("input[name='message']").val()
-        },
-        dataType: "json",
-        // success: function() {
-        //   $("#success").fadeIn();
-        //   $("#contact-form").fadeOut();
-        // },
-        // error: function() {
-        //   $("#error").fadeIn();
-        // }
-      });
-    }
+
+  var $contactForm = $('#contact-form');
+  $contactForm.submit(function(e) {
+  	e.preventDefault();
+  	$.ajax({
+  		url: '//formspree.io/info@10zingdigital.com',
+  		method: 'POST',
+      data: {
+        Name: $('#contact-form').find("input[name='name']").val(),
+        Email: $('#contact-form').find("input[name='_replyto']").val(),
+        Company: $('#contact-form').find("input[name='company']").val(),
+        Phone: $('#contact-form').find("input[name='phone']").val(),
+        Message: $('#contact-form').find("textarea[name='message']").val()
+      },
+      dataType: 'json',
+  		success: function(data) {
+        $('#contact-form input').val('');
+        $('#contact-form textarea').not('#submit-form').val('');
+        console.log('success ', data);
+  		},
+  		error: function(err) {
+        console.log('error ', err);
+      }
+  	});
   });
 
 });

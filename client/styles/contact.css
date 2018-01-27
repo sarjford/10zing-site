@@ -7,9 +7,9 @@ input {
   padding: 0;
   width: auto;
   border-radius: 0;
-}
-input:focus, textarea:focus {
-   outline: none;
+  -webkit-appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 textarea {
   -webkit-appearance: none;
@@ -23,6 +23,9 @@ textarea {
   box-shadow: none;
   resize: none;
   border-radius: 0;
+}
+input:focus, textarea:focus {
+   outline: none;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #fff;
@@ -76,7 +79,9 @@ span,input,textarea {
 .submit:hover {
   background: transparent;
 }
-
+.is-hidden {
+  display: none;
+}
 /* ***** ALL MOBILE **** */
 @media only screen and (max-width: 575px) {
   .contact-us {

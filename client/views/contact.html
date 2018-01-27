@@ -54,19 +54,18 @@
 
       <div class="contact-wrapper">
         <h2>CONTACT US</h2>
-        <section class="contact-form-container">
+        <section class="contact-form-container" method="POST">
             <form id="contact-form">
               <input type="text" name="name" placeholder="*Name" class="text-box" required />
               <input type="email" name="_replyto" placeholder="*Email" class="text-box even" required />
               <input type="text" name="company" placeholder="*Company" class="text-box" required />
               <input type="tel" name="phone" placeholder="*Phone" class="text-box even" required />
               <textarea name="message" placeholder="*Questions/Comments" class="message" required></textarea>
+              <input class="is-hidden" type="text" name="_gotcha">
               <input type="hidden" name="_next" value="https://4618b43d.ngrok.io/contact" />
               <input type="submit" value="SUMMIT" class="submit">
             </form>
           <span>*Required</span>
-          <div id="success" class="msg success">Thank you for your inquiry. Someone will respond to you shortly.</div>
-          <div id="error" class="msg error">There was an issue with your submission.</div>
         </section>
       </div>
     </section>
