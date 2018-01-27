@@ -4,9 +4,6 @@ $(document).ready(function(){
   $('#home').click(function(){
     window.location.href="/";
   });
-  $('.sub-nav-wrapper span').click(function(){
-    window.location.href="/";
-  });
   $('#about').click(function(){
     window.location.href="/about";
   });
@@ -62,6 +59,10 @@ $(document).ready(function(){
     $('.section3 h2').before('<img src="/assets/orange_key.png">');
     // excel image only on desktop
     $('#about-section1').append('<img src="/assets/About_excel_desktop.png">');
+
+    $('.sub-nav-wrapper span').click(function(){
+      window.location.href="/";
+    });
 
     // handler for marketing services nav list
     $('.navigation li:first-child').hover(function(){
