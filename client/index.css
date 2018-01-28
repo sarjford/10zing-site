@@ -78,7 +78,7 @@ section {
 	color: #fff;
 }
 .section3 .img-div {
-  background:url("/assets/green_tress_desktop.png") no-repeat center;
+  background:url("/assets/home_green_tress_desktop.png") no-repeat center;
 	background-size:cover;
 }
 .section3 .img-wrapper {
@@ -107,7 +107,7 @@ section {
 	padding: 7% 26% 19% 8%;
 }
 .section4 .img-div {
-  background:url("/assets/graph_climbers_desktop.png") no-repeat center;
+  background:url("/assets/home_graph_climbers_desktop.png") no-repeat center;
 	background-size:cover;
 }
 .section4 .img-wrapper {
@@ -272,7 +272,7 @@ footer {
     padding-bottom: 117%;
   }
 	.section5 .img-div {
-	  background:url('/assets/10zing_mobileHP_footer.png') no-repeat center;
+	  background:url('/assets/homepage_footer_mobile.png') no-repeat center;
 	  background-size:cover;
 	}
 

@@ -190,7 +190,7 @@ Desktop = 576+
 		position: relative;
 	}
 	header .img-div {
-		background:url("/assets/orange_logo.png") no-repeat center;
+		background:url("/assets/logo_mobile.png") no-repeat center;
 		background-size:cover;
 		background-position: center;
 		position: absolute;
