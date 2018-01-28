@@ -105,7 +105,7 @@ $(document).ready(function(){
       dataType: 'json',
   		success: function(data) {
         $('#contact-form input').val('');
-        $('#contact-form textarea').not('#submit-form').val('');
+        $('#contact-form textarea').not('.submit').val('');
         console.log('success ', data);
   		},
   		error: function(err) {
