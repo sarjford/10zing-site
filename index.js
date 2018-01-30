@@ -28,6 +28,6 @@ app.use("*",function(req,res){
   res.sendFile(path + "/views/404.html");
 });
 
-app.listen(9000, () => {
-  console.log('listening on port 9000!');
+app.listen(80, () => {
+  console.log('listening on port 80!');
 });
