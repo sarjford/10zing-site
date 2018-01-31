@@ -5,28 +5,29 @@ $(document).ready(function(){
     window.location.href="/";
   });
   $('#about').click(function(){
-    window.location.href="/about";
+    window.location.href="/about-us";
   });
   $('#contact').click(function(){
-    window.location.href="/contact";
+    window.location.href="/contact-us";
   });
 
   // sub nav
   $('#facebook-link').click(function(){
-    window.location.href="/#facebook";
+    window.location.href="/#facebook-advertising";
   });
   $('#paid-link').click(function(){
-    window.location.href="/#paid";
+    window.location.href="/#paid-search-marketing";
   });
   $('#seo-link').click(function(){
-    window.location.href="/#seo";
+    window.location.href="/#seo-keyword-optimization";
   });
   $('#measurement-link').click(function(){
-    window.location.href="/#measurement";
+    window.location.href="/#measurement-and-analytics";
   });
   $('#cross-channel-link').click(function(){
-    window.location.href="/#cross-channel";
+    window.location.href="/#cross-channel-marketing-strategy";
   });
+
 
   // MOBILE-SPECIFIC JS
   if ($(window).width() < 576) {
@@ -51,6 +52,13 @@ $(document).ready(function(){
     $('header ul ul li').click(function(){
       $(this).css('color', '#FF8110');
     });
+
+    // chrome back button bug
+    window.onhashchange = function(event) {
+      if (window.location.hash === "") {
+        window.scrollTo(0,0);
+      }
+    }
 
   // DESKTOP
   } else {
