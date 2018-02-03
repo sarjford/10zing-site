@@ -2,24 +2,6 @@ section {
   position: relative;
 }
 
-/*  HERO  */
-.img-div {
-  background-position: center;
-  position: absolute;
-  top: 0; bottom: 0; left: 0; right: 0;
-}
-.img-wrapper {
-	position: absolute;
-	width: 100%;
-}
-.outer-img-wrapper {
-	position: absolute;
-}
-
-
-/*  SECTIONS  */
-
-
 
 /* BIOS */
 .about.section2 {
@@ -81,14 +63,9 @@ Desktop = 576+
     background:url('/assets/About_hero_mobile.png') no-repeat center;
     background-size:cover;
   }
-
-	/* .hero .img-div {
-		background:url('/assets/About_hero_mobile.png') no-repeat center;
-		background-size:cover;
-	}
-	.hero .img-wrapper {
-		padding-bottom: 180%;
-	} */
+  .hero .img-wrapper {
+  	padding-bottom: 189%;
+  }
 
 	.section1 .content {
 		margin: 0 auto;
