@@ -136,13 +136,7 @@ section {
 .section5 .hr {
 	width: 77%;
   border-top: 4px solid #848881;
-  margin: 20px 0 31px 19px;
-}
-.section5 .hr img {
-	position: absolute;
-  left: -230px;
-  top: -27px;
-  width: 250px;
+  margin: 20px 0 31px 0;
 }
 .section5 .diagonal-line {
 	width: 96px;
@@ -152,16 +146,6 @@ section {
 	position: absolute;
 	top: 9%;
 	left: -7%;
-}
-
-footer {
-  background:url('/assets/footer.png') no-repeat center;
-  background-position: center;
-  background-size:cover;
-  top: 0; bottom: 0; left: 0; right: 0;
-}
-footer {
-	padding-bottom: 36%;
 }
 
 
@@ -306,16 +290,24 @@ footer {
 	.section5 .outer-img-wrapper {
 		left: 0;
 		top: 6%;
-		width: 88%;
+		width: 100%;
 	}
 	.section5 .img-wrapper {
-		padding-bottom: 56%;
+		padding-bottom: 62%;
 		position: relative; width: 100%;
 	}
 	.section5 .img-div {
-	  background:url("/assets/climber_lookingout_backdrop.png") no-repeat center;
+	  background:url("/assets/homepage_section5_desktop.png") no-repeat center;
 		background-size:cover;
 	}
+  footer {
+    background:url('/assets/footer.png') no-repeat center;
+    background-position: center;
+    background-size:cover;
+    top: 0; bottom: 0; left: 0; right: 0;
+    padding-bottom: 36%;
+    position: relative;
+  }
 }
 
 /******** DESKTOP SUB SECTION A ********/
@@ -332,15 +324,13 @@ footer {
 		margin: 0 0 17px 2px;
 	}
 
+  .section5 .outer-img-wrapper {
+    top: 2%;
+  }
 	.section5 .hr {
-    width: 400px;
+    width: 410px;
     border-top: 3px solid #848881;
-    margin: 10px 0 15px 6px;
-	}
-	.section5 .hr img {
-		left: -194px;
-		top: -45px;
-		width: 200px;
+    margin: 10px 0 15px;
 	}
 }
 
@@ -355,21 +345,10 @@ footer {
 	.section5 h2 {
 		font-size: 1.7em;
 	}
-	.section5 .img-wrapper {
-    padding-bottom: 48%;
-    left: -6px;
-    top: 9%;
-    width: 92%;
-	}
 	.section5 .hr {
-		width: 345px;
+		width: 355px;
 		border-top: 2px solid #848881;
-		margin: 10px 0 15px 6px;
-	}
-	.section5 .hr img {
-    left: -114px;
-    top: -15px;
-		width: 120px;
+		margin: 10px 0 15px;
 	}
 }
 
@@ -394,18 +373,22 @@ footer {
 		font-size: 2.6em;
 	}
   .section5 .hr {
-    width: 502px;
+    width: 522px;
+    border-top: 3px solid #848881;
   }
-	.section5 .hr img {
-	  top: -48px;
-	}
+  .section5 .outer-img-wrapper {
+    top: 3%;
+  }
 }
 
 /******** DESKTOP SUBSECTION - MED/LARGE SCREENS ********/
 @media only screen and (min-width: 1250px) and (max-width: 1600px){
   .section5 .hr {
-    width: 725px;
-    border-top: 3px solid #848881;
+    width: 743px;
+    border-top: 4px solid #848881;
+  }
+  .section5 .outer-img-wrapper {
+    top: 2%;
   }
 
 }
@@ -422,17 +405,21 @@ footer {
 	}
 
   .section5 .hr {
-    width: 908px;
+    width: 925px;
     border-top: 5px solid #848881;
 
   }
-  .section5 .hr img {
-    left: -319px;
-    top: -49px;
-    width: 340px;
+  .section5 .outer-img-wrapper {
+    top: 3%;
   }
-
 }
+
+@media only screen and (min-width: 2100px) and (max-width: 2199px) {
+  .section5 .outer-img-wrapper {
+    top: 0%;
+  }
+}
+
 
 /******** DESKTOP SUBSECTION - LARGEST SCREENS ********/
 @media only screen and (min-width: 2200px) {
@@ -446,13 +433,11 @@ footer {
     top: 43px;
 	}
 
-	.section5 .hr img {
-    left: -380px;
-    top: -42px;
-    width: 400px;
-	}
+  .section5 .outer-img-wrapper {
+    top: 3%;
+  }
   .section5 .hr {
-    border-top: 5px solid #848881;
+    border-top: 6px solid #848881;
     width: 1275px;
   }
 }
