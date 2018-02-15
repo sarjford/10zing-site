@@ -22,6 +22,10 @@ router.get("/contact-us",function(req,res){
   res.sendFile(path + "/views/contact.html");
 });
 
+router.get("/thank-you",function(req,res){
+  res.sendFile(path + "/views/thanks.html");
+});
+
 app.use("/",router);
 
 app.use("*",function(req,res){

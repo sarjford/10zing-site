@@ -97,29 +97,33 @@ $(document).ready(function(){
   }
 
 
-  var $contactForm = $('#contact-form');
-  $contactForm.submit(function(e) {
-  	e.preventDefault();
-  	$.ajax({
-  		url: 'https://formspree.io/juan.salazara@gmail.com',
-  		method: 'POST',
-      data: {
-        Name: $('#contact-form').find("input[name='name']").val(),
-        Email: $('#contact-form').find("input[name='_replyto']").val(),
-        Company: $('#contact-form').find("input[name='company']").val(),
-        Phone: $('#contact-form').find("input[name='phone']").val(),
-        Message: $('#contact-form').find("textarea[name='message']").val()
-      },
-      dataType: 'json',
-  		success: function(data) {
-        $('#contact-form input').not('.submit').val('');
-        $('#contact-form textarea').val('');
-        console.log('success ', data);
-  		},
-  		error: function(err) {
-        console.log('error ', err);
-      }
-  	});
-  });
+  // var $contactForm = $('#contact-form');
+  // $contactForm.submit(function(e) {
+  // 	e.preventDefault();
+  //   $('#message-container').html('');
+  //
+  // 	$.ajax({
+  // 		url: 'https://formspree.io/info@10zingdigital.com',
+  // 		method: 'POST',
+  //     data: {
+  //       Name: $('#contact-form').find("input[name='name']").val(),
+  //       Email: $('#contact-form').find("input[name='_replyto']").val(),
+  //       Company: $('#contact-form').find("input[name='company']").val(),
+  //       Phone: $('#contact-form').find("input[name='phone']").val(),
+  //       Message: $('#contact-form').find("textarea[name='message']").val()
+  //     },
+  //     dataType: 'json',
+  //     success: function(data) {
+  //       $('#contact-form input').not('.submit').val('');
+  //       $('#contact-form textarea').val('');
+  //       console.log('success ', data);
+  //       $('#message-container').append('<span class="res">Your message has been sent. Thanks for contacting us!</span>');
+  // 		},
+  // 		error: function(err) {
+  //       console.log('error ', err);
+  //       $('#message-container').append('<span class="res">Looks like there was an error. Please try again.</span>');
+  //     }
+  // 	});
+  // });
 
 });
