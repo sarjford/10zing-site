@@ -198,7 +198,7 @@ Desktop = 576+
 
   /* footer */
   .section5.about {
-    padding: 5% 0 47%;
+    padding: 1% 0 47%;
   }
   .section5 .outer-img-wrapper {
     width: 100%;
@@ -221,7 +221,7 @@ Desktop = 576+
   }
   .section5.about h2 {
     text-align: center;
-    margin: 0 0 27px 0;
+    margin: 7% 0 7%;
   }
 }
 
@@ -338,7 +338,7 @@ Desktop = 576+
   }
 
   .section5.about {
-    padding: 5% 0 50%;
+    padding: 1% 0 50%;
   }
 
 }
@@ -360,7 +360,7 @@ Desktop = 576+
   }
 
   .section5.about {
-    padding: 5% 0 51%;
+    padding: 1% 0 51%;
   }
 
 }
