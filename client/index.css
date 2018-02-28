@@ -151,10 +151,6 @@ section {
 
 /***** ALL MOBILE *****/
 @media only screen and (max-width: 575px) {
-  header {
-    overflow: hidden;
-  }
-
   /* hero */
 	.hero .img-div {
 		background:url('/assets/homepage_hero_mobile.png') no-repeat center;
