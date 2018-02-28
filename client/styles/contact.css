@@ -56,7 +56,10 @@ span.required, input {
 span.required,input,textarea {
   font-size: .9em;
 }
-
+.thank-you h2 {
+  font-family: 'Sequel Rounded', sans-serif;
+  line-height: 1.5;
+}
 .contact-wrapper {
   position: relative;
   top: 20%;
@@ -101,6 +104,9 @@ span.required,input,textarea {
   .contact-us h2 {
     font-size: 1.5em;
     margin: 0 auto 12%;
+  }
+  .thank-you h2 {
+    width: 80%;
   }
   .text-box, .message {
     width: 100%;
