@@ -19,6 +19,8 @@ html, body {
 	padding:0;
 	height:100%;
   font-size:12px;
+  width: 100%;
+  /* overflow-x: hidden;  */
 }
 h1 {
   font-family: 'Sequel Rounded', sans-serif;
