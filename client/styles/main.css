@@ -74,10 +74,6 @@ header ul {
   padding-left: 0;
   margin: 0;
 }
-header > ul {
-	/* to adjust font/height of header */
-	padding: 18px 0;
-}
 header > ul > li {
   display: inline-block;
   vertical-align: top;
@@ -200,12 +196,12 @@ Desktop = 576+
   header > ul {
     -webkit-padding-start: 0px;
     display: inline-block;
-    width: 100%;
-    padding: 0 0 0 16%;
+		/* border: .5px solid red; */
   }
   header > ul > li {
     padding: 24px 0;
     text-align: center;
+		/* border: .5px solid; */
   }
   header ul ul li {
     font-size: .8em;
@@ -257,16 +253,17 @@ Desktop = 576+
     top: 10px;
   }
   header > ul {
-    padding: 0 0 0 15%;
+		width: 83%;
+    margin: 0 0 0 15%;
   }
   header > ul > li:first-child {
-    width: 40%;
+    width: 47%;
   }
   header > ul > li:nth-child(2) {
-    width: 16%;
+    width: 22%;
   }
   header > ul > li:last-child {
-    width: 26%;
+    width: 27%;
 		margin-right: 0%;
   }
 }
@@ -281,7 +278,8 @@ Desktop = 576+
 		font-size: .7em;
 	}
 	header > ul {
-		padding: 0 0 0 13%;
+		width: 85%;
+		margin: 0 0 0 14%;
 	}
 	header ul ul li {
 		padding: 11px 0;
@@ -294,14 +292,14 @@ Desktop = 576+
 		width: 39px;
 	}
 	header > ul > li:first-child {
-		width: 40%;
+		width: 48%;
 	}
 	header > ul > li:nth-child(2) {
-		text-align: left;
+		/* text-align: left; */
 		width: 21%;
 	}
 	header > ul > li:last-child {
-		text-align: left;
+		/* text-align: left; */
 		width: 25%;
 	}
 }
@@ -329,6 +327,10 @@ Desktop = 576+
 		background-position: center;
 		position: absolute;
 		top: 0; bottom: 0; left: 0; right: 0;
+	}
+	header > ul {
+		/* to adjust font/height of header */
+		padding: 18px 0;
 	}
 
 	.error404 a {
