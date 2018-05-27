@@ -20,6 +20,9 @@ html, body {
 	height:100%;
   font-size:12px;
   width: 100%;
+	-webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
   /* overflow-x: hidden;  */
 }
 h1 {
